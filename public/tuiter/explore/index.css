@@ -5,46 +5,6 @@ body {
     border: 1px solid rgb(47, 51, 54);
 }
 
-.wd-color-white {
-    color: white;
-}
-
-.wd-color-blue {
-    color: rgb(29,161,242)
-}
-
-.wd-color-grey {
-    color: rgb(110, 118, 125)
-}
-
-.wd-color-border {
-    color: rgb(47, 51, 54);
-}
-
-.wd-background-color-darkgrey {
-    background-color: darkgray;
-}
-
-.wd-margin-left-default {
-    margin-left: 16px;
-}
-
-.wd-padding-all-around {
-    padding: 16px;
-}
-
-.wd-float-left {
-    float: left;
-}
-
-.wd-float-right {
-    float: right;
-}
-
-.wd-float-done {
-    clear: both;
-}
-
 .wd-padding-top {
     padding-top: 8px;
 }
@@ -52,7 +12,6 @@ body {
 .wd-margin-bottom {
     margin-bottom: 4px;
 }
-
 .wd-margin-bottom-large {
     margin-bottom: 8px;
 }
@@ -88,7 +47,7 @@ body {
     margin-top: 8px;
 }
 
-.wd-bar-link {
+.wd-tag-link {
     text-decoration:none;
     font-family: system-ui;
     font-size: 15px;
@@ -96,6 +55,12 @@ body {
 }
 
 .wd-tag {
+    padding: 24px 0 16px 0;
+    margin-right: 32px;
+}
+
+.wd-tag-selected {
+    border-bottom:5px solid rgb(29,161,242);
     padding: 24px 0 16px 0;
     margin-right: 32px;
 }
@@ -161,12 +126,6 @@ body {
 .wd-trending-author-verified-tag {
     width: 16px;
     height: 16px;
-    object-fit: cover;
-}
-
-.wd-trending-more-button {
-    width: 16px;
-    height: 8px;
     object-fit: cover;
 }
 
