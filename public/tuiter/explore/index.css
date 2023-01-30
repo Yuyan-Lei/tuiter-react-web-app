@@ -1,0 +1,176 @@
+body {
+    background-color: black;
+    margin-left: 40px;
+    margin-right: 16px;
+    border: 1px solid rgb(47, 51, 54);
+}
+
+.wd-color-white {
+    color: white;
+}
+
+.wd-color-blue {
+    color: rgb(29,161,242)
+}
+
+.wd-color-grey {
+    color: rgb(110, 118, 125)
+}
+
+.wd-color-border {
+    color: rgb(47, 51, 54);
+}
+
+.wd-background-color-darkgrey {
+    background-color: darkgray;
+}
+
+.wd-margin-left-default {
+    margin-left: 16px;
+}
+
+.wd-padding-all-around {
+    padding: 16px;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-float-done {
+    clear: both;
+}
+
+.wd-padding-top {
+    padding-top: 8px;
+}
+
+.wd-margin-bottom {
+    margin-bottom: 4px;
+}
+
+.wd-margin-bottom-large {
+    margin-bottom: 8px;
+}
+
+.wd-margin-horizontal-small {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.wd-search-bar-img {
+    padding: 8px 16px;
+}
+
+.wd-search-bar {
+    border-radius: 20px 20px 20px 20px;
+    width: 85%;
+    height: 35px;
+    margin-right: 12px;
+}
+
+.wd-search-bar-input {
+    border-width: 0;
+    width: 85%;
+}
+
+.wd-search-bar-input::placeholder {
+    color: white;
+    font-size: 15px;
+}
+
+.wd-search-bar-settings {
+    margin-right: 12px;
+    margin-top: 8px;
+}
+
+.wd-bar-link {
+    text-decoration:none;
+    font-family: system-ui;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.wd-tag {
+    padding: 24px 0 16px 0;
+    margin-right: 32px;
+}
+
+.wd-middle-border {
+    height: 12px;
+    background-color: rgb(22, 24, 29);
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+.wd-trending-container {
+    padding: 0 16px
+}
+
+.wd-trending-post-container {
+    border-top: 1px solid rgb(47, 51, 54);
+    padding: 8px 16px
+}
+.wd-trending-post {
+    margin-bottom: 16px;
+}
+.wd-trending-post-text-container {
+    width: 76%;
+}
+.wd-trending-grey-small-text {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    font-family: system-ui;
+}
+.wd-E-light-grey-text {
+    color: rgb(110, 118, 125) ;
+    font-size: 13px;
+    font-family: system-ui;
+}
+.wd-trending-author-bold-white-text {
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    font-family: system-ui;
+    margin: 8px 4px;
+}
+.wd-trending-title {
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: system-ui;
+    margin-bottom: 4px;
+}
+
+.wd-round-square-photo {
+    width:100px;
+    height:100px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.wd-trending-author-round-photo {
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.wd-trending-author-verified-tag {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.wd-trending-more-button {
+    width: 16px;
+    height: 8px;
+    object-fit: cover;
+}
+
+.wd-trending-author-center {
+    display: flex;
+    align-items: center;
+}
