@@ -5,10 +5,10 @@ body {
     margin-right: 16px;
 }
 
-/* Overall continer */
+/* Overall container */
 .wd-bm-overall-container {
     border: 1px solid rgb(47, 51, 54);
-    max-width: 598px;
+    width: 598px;
 }
 
 /* For Section A */

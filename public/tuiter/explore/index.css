@@ -55,13 +55,13 @@ body {
 }
 
 .wd-tag {
-    padding: 24px 0 16px 0;
+    padding: 16px 0 16px 0;
     margin-right: 32px;
 }
 
 .wd-tag-selected {
     border-bottom:5px solid rgb(29,161,242);
-    padding: 24px 0 16px 0;
+    padding: 16px 0 16px 0;
     margin-right: 32px;
 }
 
