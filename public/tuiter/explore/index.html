@@ -14,12 +14,13 @@
         <!--    search bar input field  -->
         <div class="wd-search-bar wd-background-color-darkgrey wd-float-left">
             <form style="display: flex; align-items: center; height: 100%">
-                <img
+                <label for="search-bar"><img
                     class="wd-search-bar-img"
                     src="imgs/search-icon.png"
                     width="20" height="20">
+                </label>
                 <input class="wd-search-bar-input wd-color-white wd-background-color-darkgrey"
-                    type="text" placeholder="Search Tuiter">
+                    id="search-bar" type="text" placeholder="Search Tuiter">
             </form>
         </div>
         <!--    search bar settings icon  -->
@@ -64,7 +65,9 @@
             <div class="wd-middle-border"></div>
             <div class="wd-trending-container">
                 <div class="wd-float-right">
-                    <img src="./imgs/more-white.png" class="wd-more-button">
+                    <a href="#">
+                        <img src="./imgs/more-white.png" class="wd-more-button">
+                    </a>
                 </div>
                 <div class="wd-float-done"></div>
 
@@ -73,7 +76,7 @@
                     <div class="wd-trending-grey-small-text wd-margin-bottom">
                         <div class="wd-float-left">Trending in Science</div>
                         <div class="wd-float-right">
-                            <img src="./imgs/more-grey.png" class="wd-more-button">
+                            <a href="#"><img src="./imgs/more-grey.png" class="wd-more-button"></a>
                         </div>
                         <div class="wd-float-done"></div>
                     </div>
@@ -86,7 +89,7 @@
                     <div >
                         <div class="wd-trending-grey-small-text wd-float-left wd-margin-bottom">Sports · Trending</div>
                         <div class="wd-float-right">
-                            <img src="./imgs/more-grey.png" class="wd-more-button">
+                            <a href="#"><img src="./imgs/more-grey.png" class="wd-more-button"></a>
                         </div>
                         <div class="wd-float-done"></div>
                     </div>
@@ -158,7 +161,7 @@
                 <div class="wd-trending-grey-small-text">
                     <div style="float: left; margin: 4px 0">Trending in United States</div>
                     <div class="wd-float-right">
-                        <img src="./imgs/more-grey.png" height="16px">
+                        <a href="#"><img src="./imgs/more-grey.png" class="wd-more-button"></a>
                     </div>
                     <div class="wd-float-done"></div>
                 </div>
