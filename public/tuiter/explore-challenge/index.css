@@ -3,6 +3,19 @@ body {
     margin-right: 16px;
 }
 
+.wd-tuit-bg-color {
+    background-color: rgb(74, 153, 233);
+}
+
+.wd-tuit-color {
+    color: rgb(74, 153, 233);
+}
+
+.wd-flex-center {
+    display: flex;
+    align-items: center;
+}
+
 .wd-bg-color-lightgrey {
     background: rgb(239, 243, 244)
 }
@@ -23,6 +36,14 @@ body {
     margin-right: 2px;
 }
 
+.wd-list-group-item-override {
+    border: 0;
+}
+
+.wd-active-item {
+    font-weight: 700;
+}
+
 .wd-search-bar-img {
     padding-top: 8px;
     padding-left: 16px;
@@ -31,17 +52,15 @@ body {
 
 .wd-search-bar {
     border-radius: 20px 20px 20px 20px;
-    border: 1px solid lightgrey;
-    flex: 1;
     height: 45px;
-    margin-right: 12px;
+    flex: 1;
 }
 
 .wd-search-bar-input {
     border-width: 0;
     width: 85%;
     font-size: 15px;
-    padding:0 12px;
+    padding:12px;
 }
 
 .wd-search-bar-input::placeholder {
@@ -49,6 +68,8 @@ body {
 }
 
 .wd-search-bar-settings {
+    margin-right: 12px;
+    margin-top: 8px;
 }
 
 .wd-tag-link {
@@ -167,6 +188,8 @@ body {
 
 .btn-primary.wd-follow-button-override {
     font-size: 14px;
+    background-color: rgb(15, 20, 25);
+    font-weight: 700;
     color: white;
     padding-left: 16px;
     padding-right: 16px;
@@ -177,26 +200,55 @@ body {
     border-radius: 9999px;
 }
 
-.nav-item.wd-nav-item-override {
-    font-size: 15px;
-    font-weight: 500;
-}
-
-.nav-item.wd-nav-item-override-select {
-    font-size: 15px;
-    font-weight: 700;
-    color: black;
-}
-
 .wd-nav-bar-text {
-    margin-left: 16px;
+    margin-left: 20px;
     margin-right: 16px;
+    font-size: 20px;
 }
 
 .wd-follow-button-row {
     display: flex;
     align-items: center;
     width: fit-content;
+}
+
+.wd-who-to-follow-block {
+    background-color: rgb(247, 249, 249);
+}
+
+.wd-help-text {
+    font-size: 13px;
+    color: rgb(83, 100, 113);
+}
+
+/* Overrides */
+
+.nav-tabs {
+    border: 0;
+}
+
+.nav-tabs .active {
+    border: 0;
+}
+
+.nav-item.wd-nav-item-override {
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(83, 100, 113);
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-item.wd-nav-item-override-select {
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.list-group-item {
+    border: 0;
 }
 
 

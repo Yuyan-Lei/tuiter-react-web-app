@@ -14,127 +14,141 @@
 </head>
 <body>
     <div class="px-lg-1 mt-1 pt-1"
-         style="
-            border: 1px solid lightgrey;
+        style="
             display: flex;
             flex-direction: row;
             justify-content: center">
-
         <!-- 1. nav sidebar -->
-        <div>
-            <div class="list-group flex-column" style="width: fit-content">
-                <a href="#" class="list-group-item list-group-item-action">
+        <div style="padding-left: 0; padding-right: 0">
+            <div class="list-group flex-column">
+                <a href="#" class="p-3 wd-list-group-item-override list-group-item list-group-item-action">
                     <i class="fa-solid fa-t"></i>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-house fa-fw"></i>
+                <a href="#" class="p-3 wd-list-group-item-override list-group-item list-group-item-action">
+                    <i class="fa fa-house fa-fw"></i>
                     <span class="wd-nav-bar-text d-none d-xl-inline">Home</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action active">
+                <a href="#" class="p-3 wd-list-group-item-override list-group-item list-group-item-action wd-active-item">
                     <i class="fa-regular fa-hashtag fa-fw"></i>
                     <span class="wd-nav-bar-text d-none d-xl-inline">Explore</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">
+                <a href="#" class="p-3 wd-list-group-item-override list-group-item list-group-item-action">
                     <i class="fa-regular fa-bell fa-fw"></i>
                     <span class="wd-nav-bar-text d-none d-xl-inline">Notifications</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">
+                <a href="#" class="p-3 wd-list-group-item-override list-group-item list-group-item-action">
                     <i class="fa-regular fa-envelope fa-fw"></i>
                     <span class="wd-nav-bar-text d-none d-xl-inline">Messages</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">
+                <a href="#" class="p-3 wd-list-group-item-override list-group-item list-group-item-action">
                     <i class="fa-regular fa-bookmark fa-fw"></i>
                     <span class="wd-nav-bar-text d-none d-xl-inline">Bookmarks</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">
-                    <i class="fa-solid fa-list fa-fw"></i>
-                    <span class="wd-nav-bar-text d-none d-xl-inline">Lists</span>
+                <a href="#" class="p-3 wd-list-group-item-override list-group-item list-group-item-action">
+                    <i class="fa fa-fire fa-fw"></i>
+                    <span class="wd-nav-bar-text d-none d-xl-inline">Top Articles</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">
+                <a href="#" class="p-3 wd-list-group-item-override list-group-item list-group-item-action">
                     <i class="fa-regular fa-user fa-fw"></i>
                     <span class="wd-nav-bar-text d-none d-xl-inline">Profile</span>
                 </a>
-                <a href="#" class="list-group-item list-group-item-action">
+                <a href="#" class="p-3 wd-list-group-item-override list-group-item list-group-item-action">
                     <i class="fa-solid fa-ellipsis fa-fw"></i>
                     <span class="wd-nav-bar-text d-none d-xl-inline">More</span>
                 </a>
-                <a class="btn btn-primary wd-button-round-border d-lg-none d-xl-block mt-2"
+                <a class="btn btn-primary wd-button-round-border wd-tuit-bg-color"
+                   style="margin-top:8px"
                    href="tuit.html" role="button">
                     Tuit
                 </a>
             </div>
-            <a class="btn btn-primary wd-button-round-border d-none d-lg-block d-xl-none mt-2"
-               href="tuit.html" role="button">
-                Tuit
-            </a>
         </div>
 
         <!-- 2. main content -->
-        <div
-                class="mx-3 mb-2"
-             style="max-width:600px;"
+        <div style="max-width:600px;
+                border-left:1px solid rgb(239, 243, 244);
+                border-right:1px solid rgb(239, 243, 244);
+                margin-left: 16px; margin-right: 16px;
+                padding-left: 0; padding-right: 0;"
         >
             <!--    search bar  -->
-            <div
-                    class="px-2 pt-1 mb-2"
-                    style="
-                        display: flex;
-                        align-items: center;">
+            <div class="px-3" style="display: flex; align-items: center">
                 <!--    search bar input field  -->
-                <div class="wd-search-bar wd-float-left">
+                <div class="wd-search-bar wd-bg-color-lightgrey wd-float-left me-4">
                     <form style="display: flex; align-items: center; height: 100%">
                         <label for="search-bar"
                                style="display: flex; align-items: center;"
                         >
                         <i class="fa fa-search wd-search-bar-img"></i>
                         </label>
-                        <input class="wd-search-bar-input wd-color-grey"
+                        <input class="wd-search-bar-input wd-color-grey wd-bg-color-lightgrey"
                             id="search-bar" type="text" placeholder="Search Twitter">
                     </form>
                 </div>
                 <!--    search bar settings icon  -->
                 <a href="explore-settings.html" class="wd-float-right">
-                    <i class="fa fa-gear fa-2xl"></i>
+                    <i class="fa-solid fa-gear" style="color: black;"></i>
                 </a>
 
                 <div class="wd-float-done"></div>
             </div>
 
+            <div class="pt-2"></div>
+
             <!--    tags  -->
             <div>
                 <ul class="nav nav-tabs" style="font-weight: bold">
                     <li class="nav-item wd-nav-item-override-select">
-                        <a class="nav-link active wd-color-black" aria-current="page" href="for-you.html">For you</a>
+                        <a class="nav-link active wd-color-black pb-1" aria-current="page" href="for-you.html">
+                            <div class="mx-auto"
+                                    style="
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                            width: fit-content;">
+                                <span>For you</span>
+                                <div class="wd-tuit-bg-color"
+                                     style="
+                                    height: 4px;
+                                    border-radius: 9999px;
+                                    width: 100%;
+                                    margin-top: 8px;
+                                "></div>
+                            </div>
+                        </a>
                     </li>
                     <li class="nav-item wd-nav-item-override">
-                        <a class="nav-link" href="trending.html">Trending</a>
+                        <a class="nav-link wd-color-grey" href="trending.html">Trending</a>
                     </li>
                     <li class="nav-item wd-nav-item-override">
-                        <a class="nav-link" href="news.html">News</a>
+                        <a class="nav-link wd-color-grey" href="news.html">News</a>
                     </li>
                     <li class="nav-item wd-nav-item-override">
-                        <a class="nav-link" href="sports.html">Sports</a>
+                        <a class="nav-link wd-color-grey" href="sports.html">Sports</a>
                     </li>
                     <li class="nav-item wd-nav-item-override d-sm-none d-md-block">
-                        <a class="nav-link" href="entertainment.html">Entertainment</a>
+                        <a class="nav-link wd-color-grey" href="entertainment.html">Entertainment</a>
                     </li>
                 </ul>
             </div>
 
             <!--large picture-->
-            <div class="pt-2"></div>
-                <div class="position-relative">
-                    <img src="../img/spacex.jpg" class="img-fluid" alt="...">
-                    <div class="position-absolute bottom-0 start-0 p-2"
-                            style="
+            <div class="position-relative">
+                <img src="../img/img-australian-open.jpg" class="img-fluid" alt="...">
+                <div class="position-absolute bottom-0 start-0 p-2">
+                    <div style="
+                        color: white;
+                        font-family: system-ui;">Tennis Tournament · LIVE</div>
+                    <div style="
                         color: white;
                         font-size: 23px;
                         font-weight: 800;
-                        font-family: system-ui;">SpaceX's Starship</div>
+                        font-family: system-ui;">Australian Open 2023</div>
+                </div>
             </div>
 
             <!--   suggested posts  -->
-            <div style="border: 1px solid rgb(239, 243, 244);">
+            <div style="border: 1px solid rgb(239, 243, 244); margin-top:8px; margin-bottom: 20px">
                 <!--   post 1  -->
                 <div class="wd-trending-post-container">
                     <div class="wd-float-left wd-trending-post-text-container">
@@ -206,6 +220,10 @@
                             <span class="wd-trending-date-grey"> - 2h</span>
                         </div>
                         <div class="wd-trending-grey-small-text">123K Tweets</div>
+                        <div class="wd-help-text">
+                            <i class="fa-solid fa-square-arrow-up-right"></i>
+                            <span>Promoted By NEON</span>
+                        </div>
                     </div>
                     <!-- Right Picture  -->
                     <div class="wd-float-right">
@@ -215,17 +233,50 @@
                     <div class="wd-float-done"></div>
                 </div>
 
+                <!--Trending Posts-->
+                <div class="wd-trending-container">
+                        <!--   trending post C  -->
+                        <div class="wd-trending-post">
+                            <div class="wd-trending-grey-small-text">
+                                <div class="wd-float-left">Trending in Science</div>
+                                <div class="wd-float-right">
+                                    <a href="#">
+                                        <img src="./imgs/more-grey.png" class="wd-more-button">
+                                    </a>
+                                </div>
+                                <div class="wd-float-done"></div>
+                            </div>
+                            <div class="wd-trending-title">Starship</div>
+                            <div class="wd-trending-grey-small-text">Trending with
+                                <span style="font-size: 15px; color: rgb(29, 155, 240);">
+                                    Barr, Barr</span></div>
+                        </div>
+
+                        <!--   trending post C  -->
+                        <div class="wd-trending-post">
+                            <div class="wd-trending-grey-small-text">
+                                <div class="wd-float-left">Sports · Trending</div>
+                                <div class="wd-float-right">
+                                    <a href="#">
+                                        <img src="./imgs/more-grey.png" class="wd-more-button">
+                                    </a>                                </div>
+                                <div class="wd-float-done"></div>
+                            </div>
+                            <div class="wd-trending-title">Joe Rogan</div>
+                            <div class="wd-trending-grey-small-text">5,216 Tweets</div>
+                        </div>
+                    </div>
             </div>
         </div>
 
         <!--3. Who to follow-->
         <div class="d-none d-xl-block d-lg-block">
-            <ul class="list-group">
-                <li class="list-group-item" style="font-weight: 800; font-size: 20px">
+            <ul class="list-group" style="border-radius: 16px">
+                <li class="list-group-item wd-who-to-follow-block" style="font-weight: 800; font-size: 20px">
                     Who to follow
                 </li>
-                <li class="list-group-item">
-                    <div class="row">
+                <li class="list-group-item wd-who-to-follow-block">
+                    <div class="row wd-flex-center">
                         <div class="col-2">
                             <img class="wd-follower-square-photo" src="../img/java.JPG" alt="java">
                         </div>
@@ -240,8 +291,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
-                    <div class="row">
+                <li class="list-group-item wd-who-to-follow-block">
+                    <div class="row wd-flex-center">
                         <div class="col-2">
                             <img class="wd-follower-square-photo" src="../img/relativity%20Space.jpeg" alt="relativelyspace">
                         </div>
@@ -256,8 +307,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
-                    <div class="row">
+                <li class="list-group-item wd-who-to-follow-block">
+                    <div class="row wd-flex-center">
                         <div class="col-2">
                             <img class="wd-follower-square-photo" src="../img/virgin-logo.png" alt="vrigin">
                         </div>
@@ -272,8 +323,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
-                    <div class="row">
+                <li class="list-group-item wd-who-to-follow-block">
+                    <div class="row wd-flex-center">
                         <div class="col-2">
                             <img class="wd-follower-square-photo" src="../img/NASA.jpeg" alt="nasa">
                         </div>
@@ -288,8 +339,8 @@
                         </div>
                     </div>
                 </li>
-                <li class="list-group-item">
-                    <div class="row">
+                <li class="list-group-item wd-who-to-follow-block">
+                    <div class="row wd-flex-center">
                         <div class="col-2">
                             <img class="wd-follower-square-photo" src="../img/Tesla_logo.png" alt="tesla">
                         </div>
@@ -301,13 +352,25 @@
                                 </a>
                             </div>
                             <div class="row-1 wd-follow-id">@Tesla</div>
+                            <div class="wd-help-text">
+                                <i class="fa-solid fa-square-arrow-up-right"></i>
+                                <span>Promoted</span>
+                            </div>
                         </div>
                         <div class="col-2 wd-follow-button-row">
                             <button type="button" class="btn btn-primary wd-follow-button-override">Follow</button>
                         </div>
                     </div>
                 </li>
+                <li class="list-group-item wd-who-to-follow-block">
+                    <div style="font-size: 15px; color: rgb(29, 155, 240);">
+                        Show more
+                    </div>
+                </li>
             </ul>
+            <div class="wd-help-text mx-3 my-1 mt-2">Terms of Service Privacy Policy Cookie Policy </div>
+            <div class="wd-help-text mx-3 my-1">Accessibility  Ads info  More </div>
+            <div class="wd-help-text mx-3 my-1">© 2023 Twitter, Inc.</div>
         </div>
     </div>
 
