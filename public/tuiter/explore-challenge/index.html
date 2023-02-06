@@ -19,7 +19,7 @@
             flex-direction: row;
             justify-content: center">
         <!-- 1. nav sidebar -->
-        <div style="padding-left: 0; padding-right: 0">
+        <div>
             <div class="list-group flex-column">
                 <a href="#" class="p-3 wd-list-group-item-override list-group-item list-group-item-action">
                     <i class="fa-solid fa-t"></i>
@@ -56,20 +56,17 @@
                     <i class="fa-solid fa-ellipsis fa-fw"></i>
                     <span class="wd-nav-bar-text d-none d-xl-inline">More</span>
                 </a>
-                <a class="btn btn-primary wd-button-round-border wd-tuit-bg-color"
-                   style="margin-top:8px"
+                <a class="btn btn-primary wd-button-round-border wd-override-btn-color mt-2"
                    href="tuit.html" role="button">
-                    Tuit
+                    Tweet
                 </a>
             </div>
         </div>
 
         <!-- 2. main content -->
-        <div style="max-width:600px;
+        <div class="mx-3 px-0" style="max-width:600px;
                 border-left:1px solid rgb(239, 243, 244);
-                border-right:1px solid rgb(239, 243, 244);
-                margin-left: 16px; margin-right: 16px;
-                padding-left: 0; padding-right: 0;"
+                border-right:1px solid rgb(239, 243, 244);"
         >
             <!--    search bar  -->
             <div class="px-3" style="display: flex; align-items: center">
@@ -99,35 +96,34 @@
             <div>
                 <ul class="nav nav-tabs" style="font-weight: bold">
                     <li class="nav-item wd-nav-item-override-select">
-                        <a class="nav-link active wd-color-black pb-1" aria-current="page" href="for-you.html">
+                        <a class="nav-link active wd-color-black pb-1 wd-active-nav-link-override" aria-current="page" href="for-you.html">
                             <div class="mx-auto"
                                     style="
-                            display: flex;
-                            flex-direction: column;
-                            align-items: center;
-                            width: fit-content;">
+                                        display: flex;
+                                        flex-direction: column;
+                                        align-items: center;
+                                        width: fit-content;">
                                 <span>For you</span>
-                                <div class="wd-tuit-bg-color"
+                                <div class="wd-tuit-bg-color mt-2"
                                      style="
                                     height: 4px;
                                     border-radius: 9999px;
                                     width: 100%;
-                                    margin-top: 8px;
                                 "></div>
                             </div>
                         </a>
                     </li>
                     <li class="nav-item wd-nav-item-override">
-                        <a class="nav-link wd-color-grey" href="trending.html">Trending</a>
+                        <a class="nav-link wd-color-grey wd-nav-link-override" href="trending.html">Trending</a>
                     </li>
                     <li class="nav-item wd-nav-item-override">
-                        <a class="nav-link wd-color-grey" href="news.html">News</a>
+                        <a class="nav-link wd-color-grey wd-nav-link-override" href="news.html">News</a>
                     </li>
                     <li class="nav-item wd-nav-item-override">
-                        <a class="nav-link wd-color-grey" href="sports.html">Sports</a>
+                        <a class="nav-link wd-color-grey wd-nav-link-override" href="sports.html">Sports</a>
                     </li>
                     <li class="nav-item wd-nav-item-override d-sm-none d-md-block">
-                        <a class="nav-link wd-color-grey" href="entertainment.html">Entertainment</a>
+                        <a class="nav-link wd-color-grey wd-nav-link-override" href="entertainment.html">Entertainment</a>
                     </li>
                 </ul>
             </div>
@@ -148,7 +144,7 @@
             </div>
 
             <!--   suggested posts  -->
-            <div style="border: 1px solid rgb(239, 243, 244); margin-top:8px; margin-bottom: 20px">
+            <div class="mt-2 mb-4">
                 <!--   post 1  -->
                 <div class="wd-trending-post-container">
                     <div class="wd-float-left wd-trending-post-text-container">
@@ -233,39 +229,36 @@
                     <div class="wd-float-done"></div>
                 </div>
 
-                <!--Trending Posts-->
-                <div class="wd-trending-container">
-                        <!--   trending post C  -->
-                        <div class="wd-trending-post">
-                            <div class="wd-trending-grey-small-text">
-                                <div class="wd-float-left">Trending in Science</div>
-                                <div class="wd-float-right">
-                                    <a href="#">
-                                        <img src="./imgs/more-grey.png" class="wd-more-button">
-                                    </a>
-                                </div>
-                                <div class="wd-float-done"></div>
-                            </div>
-                            <div class="wd-trending-title">Starship</div>
-                            <div class="wd-trending-grey-small-text">Trending with
-                                <span style="font-size: 15px; color: rgb(29, 155, 240);">
-                                    Barr, Barr</span></div>
+                <!--   trending post C  -->
+                <div class="wd-trending-post-container">
+                    <div class="wd-trending-grey-small-text">
+                        <div class="wd-float-left">Trending in Science</div>
+                        <div class="wd-float-right">
+                            <a href="#">
+                                <img src="./imgs/more-grey.png" class="wd-more-button">
+                            </a>
                         </div>
-
-                        <!--   trending post C  -->
-                        <div class="wd-trending-post">
-                            <div class="wd-trending-grey-small-text">
-                                <div class="wd-float-left">Sports · Trending</div>
-                                <div class="wd-float-right">
-                                    <a href="#">
-                                        <img src="./imgs/more-grey.png" class="wd-more-button">
-                                    </a>                                </div>
-                                <div class="wd-float-done"></div>
-                            </div>
-                            <div class="wd-trending-title">Joe Rogan</div>
-                            <div class="wd-trending-grey-small-text">5,216 Tweets</div>
-                        </div>
+                        <div class="wd-float-done"></div>
                     </div>
+                    <div class="wd-trending-title">Starship</div>
+                    <div class="wd-trending-grey-small-text">Trending with
+                        <span style="font-size: 15px; color: rgb(29, 155, 240);">
+                                    Barr, Barr</span></div>
+                </div>
+
+                <!--   trending post C  -->
+                <div class="wd-trending-post-container">
+                    <div class="wd-trending-grey-small-text">
+                        <div class="wd-float-left">Sports · Trending</div>
+                        <div class="wd-float-right">
+                            <a href="#">
+                                <img src="./imgs/more-grey.png" class="wd-more-button">
+                            </a>                                </div>
+                        <div class="wd-float-done"></div>
+                    </div>
+                    <div class="wd-trending-title">Joe Rogan</div>
+                    <div class="wd-trending-grey-small-text">5,216 Tweets</div>
+                </div>
             </div>
         </div>
 

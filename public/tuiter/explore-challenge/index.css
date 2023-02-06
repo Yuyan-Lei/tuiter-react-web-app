@@ -4,11 +4,16 @@ body {
 }
 
 .wd-tuit-bg-color {
-    background-color: rgb(74, 153, 233);
+    background-color: rgb(29, 155, 240);
 }
 
 .wd-tuit-color {
-    color: rgb(74, 153, 233);
+    color: rgb(29, 155, 240);
+}
+
+.btn-primary.wd-override-btn-color {
+    background-color: rgb(29, 155, 240);
+    border-color: rgb(29, 155, 240);
 }
 
 .wd-flex-center {
@@ -95,12 +100,17 @@ body {
 }
 
 .wd-trending-post-container {
-    border-bottom: 1px solid rgb(239, 243, 244);
     padding: 12px 16px
+}
+.wd-trending-post-container:hover {
+    background-color: rgba(0, 0 , 0, 0.1);
 }
 .wd-trending-post {
     padding-top: 12px;
     padding-bottom: 12px;
+}
+.wd-trending-post:hover {
+    background-color: rgba(0, 0 , 0, 0.1);
 }
 .wd-trending-post-text-container {
     width: 76%;
@@ -214,6 +224,11 @@ body {
 
 .wd-who-to-follow-block {
     background-color: rgb(247, 249, 249);
+    border: 0;
+}
+
+.wd-who-to-follow-block:hover {
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
 .wd-help-text {
@@ -222,14 +237,6 @@ body {
 }
 
 /* Overrides */
-
-.nav-tabs {
-    border: 0;
-}
-
-.nav-tabs .active {
-    border: 0;
-}
 
 .nav-item.wd-nav-item-override {
     font-size: 15px;
@@ -247,8 +254,24 @@ body {
     text-align: center;
 }
 
-.list-group-item {
+.nav-link.wd-active-nav-link-override {
+    border: 0
+}
+
+.nav-link.wd-active-nav-link-override:hover {
     border: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.nav-link.wd-nav-link-override {
+    height: 100%;
+    border: 0;
+}
+
+.nav-link.wd-nav-link-override:hover {
+    border: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: rgb(83, 100, 113);
 }
 
 
