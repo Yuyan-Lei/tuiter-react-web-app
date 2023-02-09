@@ -11,6 +11,15 @@ body {
     color: rgb(29, 155, 240);
 }
 
+.wd-gold-color {
+    color: rgb(215, 183, 55);
+}
+
+.wd-tuit-button {
+    font-size: 17px;
+    font-weight: 700;
+}
+
 .btn-primary.wd-override-btn-color {
     background-color: rgb(29, 155, 240);
     border-color: rgb(29, 155, 240);
@@ -43,6 +52,7 @@ body {
 
 .wd-list-group-item-override {
     border: 0;
+    font-size: 20px;
 }
 
 .wd-active-item {
@@ -52,7 +62,8 @@ body {
 .wd-search-bar-img {
     padding-top: 8px;
     padding-left: 16px;
-    padding-bottom:8px;
+    padding-bottom: 8px;
+    color: rgb(113, 118, 123);
 }
 
 .wd-search-bar {
@@ -123,7 +134,7 @@ body {
 }
 .wd-trending-grey-small-text {
     color: rgb(83, 100, 113);
-    font-size: 15px;
+    font-size: 13px;
     font-family: system-ui;
 }
 .wd-E-light-grey-text {
