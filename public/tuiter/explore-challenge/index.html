@@ -13,13 +13,11 @@
           rel="stylesheet"/>
 </head>
 <body>
-    <div class="px-lg-1 mt-1 pt-1"
+    <div class="px-lg-1 mt-1 pt-1 row"
         style="
-            display: flex;
-            flex-direction: row;
             justify-content: center">
         <!-- 1. nav sidebar -->
-        <div>
+        <div class="col-xl-2 col-lg-1 col-sm-2">
             <div class="list-group flex-column">
                 <a href="#" class="p-3 wd-list-group-item-override list-group-item list-group-item-action">
                     <i class="fa-solid fa-t"></i>
@@ -64,7 +62,7 @@
         </div>
 
         <!-- 2. main content -->
-        <div class="mx-3 px-0" style="max-width:600px;
+        <div class="px-0 col-xl-6 col-sm-7" style="max-width:600px;
                 border-left:1px solid rgb(239, 243, 244);
                 border-right:1px solid rgb(239, 243, 244);"
         >
@@ -262,94 +260,59 @@
         </div>
 
         <!--3. Who to follow-->
-        <div class="d-none d-xl-block d-lg-block">
+        <div class="d-none d-xl-block d-lg-block col-lg-4">
             <ul class="list-group" style="border-radius: 16px">
                 <li class="list-group-item wd-who-to-follow-block" style="font-weight: 800; font-size: 20px">
                     Who to follow
                 </li>
                 <li class="list-group-item wd-who-to-follow-block">
-                    <div class="row wd-flex-center">
-                        <div class="col-2">
-                            <img class="wd-follower-square-photo" src="../img/java.JPG" alt="java">
+                    <div class="wd-flex-center">
+                        <div>
+                            <img class="wd-follower-circle-photo" src="../img/NEU_logo.jpg" alt="northeasternU">
                         </div>
-                        <div class="col-6">
+                        <div class="ms-1">
                             <div class="row-1 wd-follow-name">
-                                <a href="#" style="text-decoration: none; color: black;">Java <i class="fa-solid fa-circle-check wd-tuit-color"></i></a>
+                                <a href="#" style="text-decoration: none; color: black;">Northeastern U.<i class="fa-solid fa-circle-check wd-tuit-color"></i></a>
                             </div>
-                            <div class="row-1 wd-follow-id">@Java</div>
+                            <div class="row-1 wd-follow-id">@Northeastern</div>
                         </div>
-                        <div class="col-2 wd-follow-button-row">
+                        <div class="ms-auto wd-follow-button-row">
                             <button type="button" class="btn btn-primary wd-follow-button-override">Follow</button>
                         </div>
                     </div>
                 </li>
                 <li class="list-group-item wd-who-to-follow-block">
-                    <div class="row wd-flex-center">
-                        <div class="col-2">
-                            <img class="wd-follower-square-photo" src="../img/relativity%20Space.jpeg" alt="relativelyspace">
+                    <div class="wd-flex-center">
+                        <div>
+                            <img class="wd-follower-circle-photo" src="../img/Wallace_logo.jpg" alt="mattwallace">
                         </div>
-                        <div class="col-6">
+                        <div class="ms-1">
                             <div class="row-1 wd-follow-name">
-                                <a href="#" style="text-decoration: none; color: black;">Relatively Space <i class="fa-solid fa-circle-check wd-tuit-color"></i></a>
+                                <a href="#" style="text-decoration: none; color: black;">Matt Wallace <i class="fa-solid fa-circle-check wd-tuit-color"></i></a>
                             </div>
-                            <div class="row-1 wd-follow-id">@relativelyspace</div>
+                            <div class="row-1 wd-follow-id">@MattWallace88</div>
                         </div>
-                        <div class="col-2 wd-follow-button-row">
+                        <div class="ms-auto wd-follow-button-row">
                             <button type="button" class="btn btn-primary wd-follow-button-override">Follow</button>
                         </div>
                     </div>
                 </li>
                 <li class="list-group-item wd-who-to-follow-block">
-                    <div class="row wd-flex-center">
-                        <div class="col-2">
-                            <img class="wd-follower-square-photo" src="../img/virgin-logo.png" alt="vrigin">
+                    <div class="wd-flex-center">
+                        <div>
+                            <img class="wd-follower-square-photo" src="../img/PB_logo.png" alt="pointsbetusa">
                         </div>
-                        <div class="col-6">
+                        <div class="ms-1">
                             <div class="row-1 wd-follow-name">
-                                <a href="#" style="text-decoration: none; color: black;">Virgin Galactic <i class="fa-solid fa-circle-check wd-tuit-color"></i></a>
+                                <a href="#" style="text-decoration: none; color: black;">PointsBet Sportsb..<i class="fa-solid fa-circle-check wd-gold-color"></i></a>
                             </div>
-                            <div class="row-1 wd-follow-id">@virgingalactic</div>
-                        </div>
-                        <div class="col-2 wd-follow-button-row">
-                            <button type="button" class="btn btn-primary wd-follow-button-override">Follow</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item wd-who-to-follow-block">
-                    <div class="row wd-flex-center">
-                        <div class="col-2">
-                            <img class="wd-follower-square-photo" src="../img/NASA.jpeg" alt="nasa">
-                        </div>
-                        <div class="col-6">
-                            <div class="row-1 wd-follow-name">
-                                <a href="#" style="text-decoration: none; color: black;">NASA <i class="fa-solid fa-circle-check wd-gold-color"></i></a>
-                            </div>
-                            <div class="row-1 wd-follow-id">@NASA</div>
-                        </div>
-                        <div class="col-2 wd-follow-button-row">
-                            <button type="button" class="btn btn-primary wd-follow-button-override">Follow</button>
-                        </div>
-                    </div>
-                </li>
-                <li class="list-group-item wd-who-to-follow-block">
-                    <div class="row wd-flex-center">
-                        <div class="col-2">
-                            <img class="wd-follower-square-photo" src="../img/Tesla_logo.png" alt="tesla">
-                        </div>
-                        <div class="col-6">
-                            <div class="row-1 wd-follow-name">
-                                <a href="#" style="text-decoration: none; color: black;">
-                                    Tesla
-                                    <i class="fa-solid fa-circle-check wd-gold-color"></i>
-                                </a>
-                            </div>
-                            <div class="row-1 wd-follow-id">@Tesla</div>
+                            <div class="row-1 wd-follow-id">@PointsBetUSA</div>
                             <div class="wd-help-text">
                                 <i class="fa-solid fa-square-arrow-up-right"></i>
                                 <span>Promoted</span>
                             </div>
                         </div>
-                        <div class="col-2 wd-follow-button-row">
+                        <div class="ms-auto wd-follow-button-row">
                             <button type="button" class="btn btn-primary wd-follow-button-override">Follow</button>
                         </div>
                     </div>
