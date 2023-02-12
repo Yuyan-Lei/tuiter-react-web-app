@@ -54,6 +54,7 @@ body {
     border: 0;
     font-size: 20px;
     display: flex;
+    align-items: center;
 }
 
 .wd-active-item {
