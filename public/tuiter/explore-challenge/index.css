@@ -113,7 +113,6 @@ body {
 
 .wd-trending-post-container {
     padding: 12px 16px;
-    display: flex;
 }
 .wd-trending-post-container:hover {
     background-color: rgba(0, 0 , 0, 0.1);
