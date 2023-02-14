@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Explore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+          rel="stylesheet"/>
+    <link href="../styles.css"
+          rel="stylesheet"/>
+    <link href="index.css"
+          rel="stylesheet"/>
+</head>
+<body>
+    <div class="px-lg-1 mt-1 pt-1 row"
+         style="
+            border: 1px solid lightgrey;
+            justify-content: center">
+
+        <!-- 1. nav sidebar -->
+        <div class="col-xl-2 col-sm-1">
+            <div class="list-group flex-column" style="width: fit-content">
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-t"></i>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-house fa-fw"></i>
+                    <span class="wd-nav-bar-text d-none d-xl-inline">Home</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action active">
+                    <i class="fa-regular fa-hashtag fa-fw"></i>
+                    <span class="wd-nav-bar-text d-none d-xl-inline">Explore</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-regular fa-bell fa-fw"></i>
+                    <span class="wd-nav-bar-text d-none d-xl-inline">Notifications</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-regular fa-envelope fa-fw"></i>
+                    <span class="wd-nav-bar-text d-none d-xl-inline">Messages</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-regular fa-bookmark fa-fw"></i>
+                    <span class="wd-nav-bar-text d-none d-xl-inline">Bookmarks</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-list fa-fw"></i>
+                    <span class="wd-nav-bar-text d-none d-xl-inline">Lists</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-regular fa-user fa-fw"></i>
+                    <span class="wd-nav-bar-text d-none d-xl-inline">Profile</span>
+                </a>
+                <a href="#" class="list-group-item list-group-item-action">
+                    <i class="fa-solid fa-ellipsis fa-fw"></i>
+                    <span class="wd-nav-bar-text d-none d-xl-inline">More</span>
+                </a>
+                <a class="btn btn-primary wd-button-round-border d-lg-none d-xl-block mt-2"
+                   href="tuit.html" role="button">
+                    Tuit
+                </a>
+            </div>
+            <a class="btn btn-primary wd-button-round-border d-none d-lg-block d-xl-none mt-2"
+               href="tuit.html" role="button">
+                Tuit
+            </a>
+        </div>
+
+        <!-- 2. main content -->
+        <div
+                class="mb-2 col-xl-6 col-sm-7"
+             style="max-width:600px;"
+        >
+            <!--    search bar  -->
+            <div
+                    class="px-2 pt-1 mb-2"
+                    style="
+                        display: flex;
+                        align-items: center;">
+                <!--    search bar input field  -->
+                <div class="wd-search-bar wd-float-left">
+                    <form style="display: flex; align-items: center; height: 100%">
+                        <label for="search-bar"
+                               style="display: flex; align-items: center;"
+                        >
+                        <i class="fa fa-search wd-search-bar-img"></i>
+                        </label>
+                        <input class="wd-search-bar-input wd-color-grey"
+                            id="search-bar" type="text" placeholder="Search Twitter">
+                    </form>
+                </div>
+                <!--    search bar settings icon  -->
+                <a href="explore-settings.html" class="wd-float-right">
+                    <i class="fa fa-gear fa-2xl"></i>
+                </a>
+
+                <div class="wd-float-done"></div>
+            </div>
+
+            <!--    tags  -->
+            <div>
+                <ul class="nav nav-tabs" style="font-weight: bold">
+                    <li class="nav-item wd-nav-item-override-select">
+                        <a class="nav-link active wd-color-black" aria-current="page" href="for-you.html">For you</a>
+                    </li>
+                    <li class="nav-item wd-nav-item-override">
+                        <a class="nav-link" href="trending.html">Trending</a>
+                    </li>
+                    <li class="nav-item wd-nav-item-override">
+                        <a class="nav-link" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item wd-nav-item-override">
+                        <a class="nav-link" href="sports.html">Sports</a>
+                    </li>
+                    <li class="nav-item wd-nav-item-override d-sm-none d-md-block">
+                        <a class="nav-link" href="entertainment.html">Entertainment</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!--large picture-->
+            <div class="pt-2"></div>
+                <div class="position-relative">
+                    <img src="../img/spacex.jpg" class="img-fluid" alt="...">
+                    <div class="position-absolute bottom-0 start-0 p-2"
+                            style="
+                        color: white;
+                        font-size: 23px;
+                        font-weight: 800;
+                        font-family: system-ui;">SpaceX's Starship</div>
+            </div>
+
+            <!--   suggested posts  -->
+            <div class="mt-2" style="border: 1px solid rgb(239, 243, 244);">
+                <!--   post 1  -->
+                <div class="wd-trending-post-container">
+                    <div class="wd-float-left wd-trending-post-text-container">
+                        <!-- Grey title  -->
+                        <div class="wd-trending-grey-small-text">Web Development</div>
+                        <!-- Author and Date  -->
+                        <div class="wd-trending-author-center">
+                            <span class="wd-trending-author-bold-white-text">ReactJS</span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span class="wd-trending-date-grey"> - 2h</span>
+                        </div>
+                        <!-- Article Title  -->
+                        <div class="wd-trending-title">React.js is a component based font end library that makes it very easy to build Single Page Applications or SPAs</div>
+                    </div>
+                    <!-- Right Picture  -->
+                    <div class="wd-float-right">
+                        <img class="wd-round-square-photo"
+                             src="../img/reactjs.png">
+                    </div>
+                    <div class="wd-float-done"></div>
+                </div>
+
+                <!--Post 2-->
+                <div class="wd-trending-post-container">
+                    <div class="wd-float-left wd-trending-post-text-container">
+                        <!-- Author and Date  -->
+                        <div class="wd-trending-author-center">
+                            <span class="wd-trending-author-bold-white-text">JavaScript</span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span class="wd-trending-date-grey"> - 2h</span>
+                        </div>
+                        <!-- Article Title  -->
+                        <div class="wd-trending-title">JavaScript is programming language that run on browsers as well as desktops</div>
+                        <!-- Tweets  -->
+                        <div class="wd-trending-grey-small-text">123K Tweets</div>
+                    </div>
+                    <!-- Right Picture  -->
+                    <div class="wd-float-right">
+                        <img class="wd-round-square-photo"
+                             src="../img/js.png">
+                    </div>
+                    <div class="wd-float-done"></div>
+                </div>
+
+                <!--Post 3-->
+                <div class="wd-trending-post-container">
+                    <div class="wd-float-left wd-trending-post-text-container">
+                        <div class="wd-trending-grey-small-text">Web Development</div>
+                        <div class="wd-trending-author-center">
+                            <span class="wd-trending-author-bold-white-text">jQuery</span>
+                        </div>
+                        <div class="wd-trending-grey-small-text">123K Tweets</div>
+                    </div>
+                    <!-- Right Picture  -->
+                    <div class="wd-float-right">
+                        <img class="wd-round-square-photo"
+                             src="../img/jquery.png">
+                    </div>
+                    <div class="wd-float-done"></div>
+                </div>
+
+                <!--Post 4-->
+                <div class="wd-trending-post-container">
+                    <div class="wd-float-left wd-trending-post-text-container">
+                        <div class="wd-trending-grey-small-text">Web Development</div>
+                        <div class="wd-trending-author-center">
+                            <span class="wd-trending-author-bold-white-text">NodeJS</span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            <span class="wd-trending-date-grey"> - 2h</span>
+                        </div>
+                        <div class="wd-trending-grey-small-text">123K Tweets</div>
+                    </div>
+                    <!-- Right Picture  -->
+                    <div class="wd-float-right">
+                        <img class="wd-round-square-photo"
+                             src="../img/nodejs.jpeg">
+                    </div>
+                    <div class="wd-float-done"></div>
+                </div>
+
+            </div>
+        </div>
+
+        <!--3. Who to follow-->
+        <div class="d-none d-xl-block d-lg-block col-4">
+            <ul class="list-group">
+                <li class="list-group-item" style="font-weight: 800; font-size: 20px">
+                    Who to follow
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex">
+                        <div>
+                            <img class="wd-follower-square-photo" src="../img/java.JPG" alt="java">
+                        </div>
+                        <div class="ms-1">
+                            <div class="row-1 wd-follow-name">
+                                <a href="#" style="text-decoration: none; color: black;">Java <i class="fa-solid fa-circle-check"></i></a>
+                            </div>
+                            <div class="row-1 wd-follow-id">@Java</div>
+                        </div>
+                        <div class="ms-auto wd-follow-button-row">
+                            <button type="button" class="btn btn-primary wd-follow-button-override">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex">
+                        <div>
+                            <img class="wd-follower-square-photo" src="../img/relativity%20Space.jpeg" alt="relativelyspace">
+                        </div>
+                        <div class="ms-1">
+                            <div class="row-1 wd-follow-name">
+                                <a href="#" style="text-decoration: none; color: black;">Relatively Space <i class="fa-solid fa-circle-check"></i></a>
+                            </div>
+                            <div class="row-1 wd-follow-id">@relativelyspace</div>
+                        </div>
+                        <div class="ms-auto wd-follow-button-row">
+                            <button type="button" class="btn btn-primary wd-follow-button-override">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex">
+                        <div>
+                            <img class="wd-follower-square-photo" src="../img/virgin-logo.png" alt="vrigin">
+                        </div>
+                        <div class="ms-1">
+                            <div class="row-1 wd-follow-name">
+                                <a href="#" style="text-decoration: none; color: black;">Virgin Galactic <i class="fa-solid fa-circle-check"></i></a>
+                            </div>
+                            <div class="row-1 wd-follow-id">@virgingalactic</div>
+                        </div>
+                        <div class="ms-auto wd-follow-button-row">
+                            <button type="button" class="btn btn-primary wd-follow-button-override">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex">
+                        <div>
+                            <img class="wd-follower-square-photo" src="../img/NASA.jpeg" alt="nasa">
+                        </div>
+                        <div class="ms-1">
+                            <div class="row-1 wd-follow-name">
+                                <a href="#" style="text-decoration: none; color: black;">NASA <i class="fa-solid fa-circle-check"></i></a>
+                            </div>
+                            <div class="row-1 wd-follow-id">@NASA</div>
+                        </div>
+                        <div class="ms-auto wd-follow-button-row">
+                            <button type="button" class="btn btn-primary wd-follow-button-override">Follow</button>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="d-flex">
+                        <div>
+                            <img class="wd-follower-square-photo" src="../img/Tesla_logo.png" alt="tesla">
+                        </div>
+                        <div class="ms-1">
+                            <div class="row-1 wd-follow-name">
+                                <a href="#" style="text-decoration: none; color: black;">
+                                    Tesla
+                                    <i class="fa-solid fa-circle-check"></i>
+                                </a>
+                            </div>
+                            <div class="row-1 wd-follow-id">@Tesla</div>
+                        </div>
+                        <div class="ms-auto wd-follow-button-row">
+                            <button type="button" class="btn btn-primary wd-follow-button-override">Follow</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,204 @@
+body {
+    margin-left: 40px;
+    margin-right: 16px;
+}
+
+.wd-bg-color-lightgrey {
+    background: rgb(239, 243, 244)
+}
+
+.wd-padding-top {
+    padding-top: 8px;
+}
+
+.wd-margin-bottom {
+    margin-bottom: 4px;
+}
+.wd-margin-bottom-large {
+    margin-bottom: 8px;
+}
+
+.wd-margin-horizontal-small {
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.wd-search-bar-img {
+    padding-top: 8px;
+    padding-left: 16px;
+    padding-bottom:8px;
+}
+
+.wd-search-bar {
+    border-radius: 20px 20px 20px 20px;
+    border: 1px solid lightgrey;
+    flex: 1;
+    height: 45px;
+    margin-right: 12px;
+}
+
+.wd-search-bar-input {
+    border-width: 0;
+    width: 85%;
+    font-size: 15px;
+    padding:0 12px;
+}
+
+.wd-search-bar-input::placeholder {
+    font-size: 15px;
+}
+
+.wd-search-bar-settings {
+}
+
+.wd-tag-link {
+    text-decoration:none;
+    font-family: system-ui;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.wd-tag {
+    padding: 24px 0 16px 0;
+    margin-right: 32px;
+}
+
+.wd-tag-selected {
+    border-bottom:5px solid rgb(29,161,242);
+    padding: 24px 0 16px 0;
+    margin-right: 32px;
+}
+
+.wd-trending-container {
+    padding: 0 16px
+}
+
+.wd-trending-post-container {
+    display: flex;
+    border-bottom: 1px solid rgb(239, 243, 244);
+    padding: 12px 16px
+}
+.wd-trending-post {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.wd-trending-post-text-container {
+    width: 76%;
+}
+.wd-trending-date-grey {
+    color: rgb(83, 100, 113);
+    font-size: 15px;
+    font-family: system-ui;
+    margin: 0px 6px
+}
+.wd-trending-grey-small-text {
+    color: rgb(83, 100, 113);
+    font-size: 15px;
+    font-family: system-ui;
+}
+.wd-E-light-grey-text {
+    color: rgb(83, 100, 113);
+    font-size: 13px;
+    font-family: system-ui;
+}
+.wd-trending-author-bold-white-text {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: system-ui;
+    margin-right: 6px;
+}
+.wd-trending-title {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: system-ui;
+}
+
+.wd-round-square-photo {
+    width:100px;
+    height:100px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.wd-trending-author-round-photo {
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.wd-trending-author-verified-tag {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.wd-trending-author-center {
+    display: flex;
+    align-items: center;
+}
+
+.wd-follower-square-photo {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.wd-follower-verified-tag {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.wd-follow-name {
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.wd-follow-id {
+    color: rgb(83, 100, 113);
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.btn-primary.wd-follow-button-override {
+    font-size: 14px;
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    min-height: 32px;
+    min-width: 32px;
+    align-items: stretch;
+    border-color: white;
+    border-radius: 9999px;
+}
+
+.nav-item.wd-nav-item-override {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-item.wd-nav-item-override-select {
+    font-size: 15px;
+    font-weight: 700;
+    color: black;
+}
+
+.wd-nav-bar-text {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.wd-follow-button-row {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
+
+
