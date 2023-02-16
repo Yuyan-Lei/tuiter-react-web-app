@@ -23,11 +23,11 @@ const PostTop = (item) => {
 }
 
 const PostContent = (item) => {
-    if (item.article === ''){
+    if (item.articleTitle === ''){
         return (`
             <div class="wd-bm-EtoF-container">
                 <img
-                        class="wd-bm-E-photo"
+                        class="img-fluid"
                         src="${item.img}">
             </div>
         `)
@@ -36,7 +36,7 @@ const PostContent = (item) => {
             <div class="wd-bm-EtoF-container">
                 <!--photo-->
                 <img
-                        class="wd-bm-E-photo"
+                        class="img-fluid"
                         src="${item.img}">
         
                 <!--article-->
@@ -44,7 +44,7 @@ const PostContent = (item) => {
                     <span class="wd-bm-F-title">${item.articleTitle}</span>
                     <div class="wd-bm-F-grey-text">
                         <span>${item.articleContent}</span><br/>
-                        <img class="wd-bm-F-link-icon" src="../imgs/link.png">
+                        <img class="wd-bm-F-link-icon" src="../img/link.png">
                         <span>${item.articleUrlText}</span>
                     </div>
                 </div>
@@ -58,32 +58,33 @@ const PostBottom = (item) => {
         <div class="wd-bm-G-container">
             <div class="wd-bm-G-box">
                 <a href="#" class="wd-bm-G-hyperlink-container">
-                    <img class="wd-bm-G-icon" src="./imgs/share.png">
+                    <img class="wd-bm-G-icon" src="../img/send-message.png">
+                    <span class="wd-bm-G-text wd-color-grey">${item.comments}</span>
                 </a>
             </div>
 
             <div class="wd-bm-G-box">
                 <a href="#" class="wd-bm-G-hyperlink-container">
-                    <img class="wd-bm-G-icon" src="./imgs/heart.png">
-                    <span class="wd-bm-G-text wd-color-grey">${item.likes}</span>
-                </a>
-            </div>
-
-            <div class="wd-bm-G-box">
-                <a href="#" class="wd-bm-G-hyperlink-container">
-                    <img class="wd-bm-G-icon" src="./imgs/retweet.png">
+                    <img class="wd-bm-G-icon" src="../img/retweet.png">
                     <span class="wd-bm-G-text wd-color-grey">${item.retweet}</span>
                 </a>
             </div>
 
             <div class="wd-bm-G-box">
                 <a href="#" class="wd-bm-G-hyperlink-container">
-                    <img class="wd-bm-G-icon" src="./imgs/send-message.png">
-                    <span class="wd-bm-G-text wd-color-grey">${item.comments}</span>
+                    <img class="wd-bm-G-icon" src="../img/heart.png">
+                    <span class="wd-bm-G-text wd-color-grey">${item.likes}</span>
                 </a>
             </div>
-
-            <div class="wd-float-done"></div>
+            
+            <div class="wd-bm-G-box">
+                <a href="#" class="wd-bm-G-hyperlink-container">
+                    <img class="wd-bm-G-icon" src="../img/share.png">
+                </a>
+            </div>
+            
+            <div class="wd-bm-G-box">
+            </div>
         </div>
     `)
 }

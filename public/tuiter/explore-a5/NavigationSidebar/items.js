@@ -1,11 +1,13 @@
 export default [
     {
         icon: "fa fa-house",
-        name: "Home"
+        name: "Home",
+        hyperlink: "../HomeScreen",
     },
     {
         icon: "fa fa-hashtag",
-        name: "Explore"
+        name: "Explore",
+        hyperlink: "../explore-a5",
     },
     {
         icon: "fa fa-bell",
