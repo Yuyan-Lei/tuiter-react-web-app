@@ -7,7 +7,7 @@ export default [
     {
         icon: "fa fa-hashtag",
         name: "Explore",
-        hyperlink: "../explore-a5",
+        hyperlink: "../explore",
     },
     {
         icon: "fa fa-bell",

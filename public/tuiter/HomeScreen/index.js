@@ -1,6 +1,6 @@
-import NavigationSidebar from "../explore-a5/NavigationSidebar";
+import NavigationSidebar from "../explore/NavigationSidebar";
 import PostList from "./PostList/PostList.js";
-import WhoToFollowList from "../explore-a5/WhoToFollowList";
+import WhoToFollowList from "../explore/WhoToFollowList";
 
 function homeComponent() {
     $('#wd-explore').append(`
