@@ -131,43 +131,74 @@ body {
     margin-left: 12px;
 }
 
-.wd-follower-square-photo {
-    width: 48px;
-    height: 48px;
-    border-radius: 100%;
-    object-fit: cover;
+.wd-trending-container {
+    padding: 0 16px
 }
 
-.wd-follower-verified-tag {
-    width: 20px;
-    height: 20px;
-    border-radius: 100%;
-    object-fit: cover;
+.wd-trending-post-container {
+    display: flex;
+    padding: 12px 16px
 }
-
-.wd-follow-name {
+.wd-trending-post {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.wd-trending-post-text-container {
+    width: 76%;
+}
+.wd-trending-date-grey {
+    color: rgb(83, 100, 113);
+    font-size: 15px;
+    font-family: system-ui;
+    margin: 0px 6px
+}
+.wd-trending-grey-small-text {
+    color: rgb(83, 100, 113);
+    font-size: 15px;
+    font-family: system-ui;
+}
+.wd-E-light-grey-text {
+    color: rgb(83, 100, 113);
+    font-size: 13px;
+    font-family: system-ui;
+}
+.wd-trending-author-bold-white-text {
     color: white;
+    font-size: 15px;
     font-weight: bold;
-    font-size: 15px;
-    white-space: nowrap;
+    font-family: system-ui;
+    margin-right: 6px;
 }
-
-.wd-follow-id {
+.wd-trending-title {
     color: white;
     font-size: 15px;
-    font-weight: 400;
+    font-weight: bold;
+    font-family: system-ui;
 }
 
-.btn-primary.wd-follow-button-override {
-    font-size: 14px;
-    color: white;
-    padding-left: 16px;
-    padding-right: 16px;
-    min-height: 32px;
-    min-width: 32px;
-    align-items: stretch;
-    border-color: black;
-    border-radius: 9999px;
+.wd-round-square-photo {
+    width:100px;
+    height:100px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.wd-trending-author-round-photo {
+    width: 16px;
+    height: 16px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.wd-trending-author-verified-tag {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+}
+
+.wd-trending-author-center {
+    display: flex;
+    align-items: center;
 }
 
 .nav-item.wd-nav-item-override {
@@ -183,11 +214,4 @@ body {
 
 .wd-nav-bar-text {
     margin-left: 16px;
-    margin-right: 16px;
-}
-
-.wd-follow-button-row {
-    display: flex;
-    align-items: center;
-    width: fit-content;
 }

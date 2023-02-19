@@ -3,7 +3,7 @@ import posts from "./Posts.js";
 
 const PostSummaryList = () => {
     return(`
-        <div class="mt-2 list-group">
+        <div class="list-group">
             ${
                 posts.map(item => {
                     return (PostSummaryItem(item));

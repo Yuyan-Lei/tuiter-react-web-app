@@ -4,6 +4,7 @@ const PostTop = (item) => {
         <div class="wd-bm-C-container">
             <div class="wd-float-left">
                 <span class="wd-bm-C-author">${item.author}</span>
+                <i class="fa-solid fa-circle-check" style="color: white"></i>
                 <span class="wd-bm-C-handle">@${item.id} · ${item.time}</span>
             </div>
             <div class="wd-float-right">
@@ -58,28 +59,28 @@ const PostBottom = (item) => {
         <div class="wd-bm-G-container">
             <div class="wd-bm-G-box">
                 <a href="#" class="wd-bm-G-hyperlink-container">
-                    <img class="wd-bm-G-icon" src="../img/send-message.png">
+                    <i class="fa-regular fa-comment wd-color-grey"></i>
                     <span class="wd-bm-G-text wd-color-grey">${item.comments}</span>
                 </a>
             </div>
 
             <div class="wd-bm-G-box">
                 <a href="#" class="wd-bm-G-hyperlink-container">
-                    <img class="wd-bm-G-icon" src="../img/retweet.png">
+                    <i class="fa-solid fa-retweet wd-color-grey"></i>
                     <span class="wd-bm-G-text wd-color-grey">${item.retweet}</span>
                 </a>
             </div>
 
             <div class="wd-bm-G-box">
                 <a href="#" class="wd-bm-G-hyperlink-container">
-                    <img class="wd-bm-G-icon" src="../img/heart.png">
+                    <i class="fa-regular fa-heart wd-color-grey"></i>
                     <span class="wd-bm-G-text wd-color-grey">${item.likes}</span>
                 </a>
             </div>
             
             <div class="wd-bm-G-box">
                 <a href="#" class="wd-bm-G-hyperlink-container">
-                    <img class="wd-bm-G-icon" src="../img/share.png">
+                    <i class="fa-solid fa-arrow-up-from-bracket wd-color-grey"></i>
                 </a>
             </div>
             

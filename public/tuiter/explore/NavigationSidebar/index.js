@@ -15,8 +15,7 @@ const NavigationSidebar = (active) => {
             }).join(' ')
         }
    </div>
-   <a class="btn btn-primary wd-button-round-border mt-2"
-       style="width: 100%;"
+   <a class="btn btn-primary wd-button-round-border mt-2 d-table w-100"
        href="tweet.html" role="button">
             Tweet
     </a>

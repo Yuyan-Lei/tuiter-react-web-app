@@ -44,14 +44,13 @@ const ExploreComponent = () => {
           <li class="nav-item wd-nav-item-override">
             <a class="nav-link" href="sports.html">Sports</a>
           </li>
-          <li class="nav-item wd-nav-item-override d-sm-none d-md-block">
+          <li class="nav-item wd-nav-item-override d-none d-md-block">
             <a class="nav-link" href="entertainment.html">Entertainment</a>
           </li>
         </ul>
         
         <!-- image with overlaid text -->
-        <div class="pt-2"></div>
-            <div class="position-relative">
+        <div class="position-relative mb-2">
                 <img src="../img/spacex.jpg" class="img-fluid" alt="...">
                 <div class="position-absolute bottom-0 start-0 p-2"
                         style="
