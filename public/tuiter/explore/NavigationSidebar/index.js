@@ -15,10 +15,12 @@ const NavigationSidebar = (active) => {
             }).join(' ')
         }
    </div>
-   <a class="btn btn-primary wd-button-round-border mt-2 d-table w-100"
+   <div class="mt-2 d-grid">
+     <a class="btn btn-primary wd-button-round-border"
        href="tweet.html" role="button">
             Tweet
-    </a>
+     </a>
+   </div>
  `);
 }
 export default NavigationSidebar;
