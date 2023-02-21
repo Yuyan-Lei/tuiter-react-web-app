@@ -5,6 +5,7 @@ import ExploreComponent from "./explore";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 import HomeComponent from "./home";
+import PostSummaryList from "./post-summary-list";
 
 
 function Tuiter() {
@@ -22,7 +23,10 @@ function Tuiter() {
                 </Routes>
             </div>
             <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-                <WhoToFollowList/>
+                <Routes>
+                    <Route path="explore" element={<WhoToFollowList/>}/>
+                    <Route path="home" element={<PostSummaryList/>}/>
+                </Routes>
             </div>
         </div>
     );
