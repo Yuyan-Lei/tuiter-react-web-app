@@ -1,11 +1,10 @@
 import React from "react";
-import {Routes, Route, Navigate} from "react-router";
+import {Routes, Route} from "react-router";
 
 import ExploreComponent from "./explore";
 import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 import HomeComponent from "./home";
-import PostSummaryList from "./post-summary-list";
 
 
 function Tuiter() {
@@ -19,14 +18,11 @@ function Tuiter() {
                 <Routes>
                     <Route path="home"    element={<HomeComponent/>}/>
                     <Route path="explore" element={<ExploreComponent/>}/>
-                    <Route path="*" element={<Navigate to="explore" replace />} />
+                    <Route path="*" element={<ExploreComponent/>} />
                 </Routes>
             </div>
             <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-                <Routes>
-                    <Route path="explore" element={<WhoToFollowList/>}/>
-                    <Route path="home" element={<PostSummaryList/>}/>
-                </Routes>
+                <WhoToFollowList />
             </div>
         </div>
     );

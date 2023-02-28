@@ -24,6 +24,6 @@
     bottom: 4px;
 }
 
-a {
-    text-decoration: none!important;
+.wd-tuit-color {
+    color: rgb(29, 155, 240);
 }

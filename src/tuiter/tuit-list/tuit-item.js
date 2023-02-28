@@ -1,5 +1,4 @@
 import React from 'react';
-import Linkify from 'react-linkify';
 
 const TuitImage = (
     {
@@ -24,7 +23,8 @@ const TuitImage = (
 ) => {
     if (item.image !== '') {
         return (
-            <div className="square rounded border-1 border-secondary overflow-hidden">
+            <div className="square border-1 border-secondary overflow-hidden my-2"
+                 style={{borderRadius: 16}}>
                 <img className="img-fluid" src={`/images/${item.image}`}/>
             </div>
         )
@@ -53,19 +53,20 @@ const TuitContent = (
     }
 ) => {
     if ((item["retweet-author"]) !== '') {
-     return (
-         <div className="square border rounded border-1 border-light p-2">
-                 <div>
-                     <img className={"rounded-circle"} width={40} src={`/images/${item['retweet-avatar']}`}/>
-                     <span className={"fw-bolder ms-1"}>{item['retweet-author']}</span>
-                     <i className="bi bi-check-circle-fill text-primary mx-1"></i>
-                     <span className={"text-secondary"}>{item['retweet-id']} · {item['retweet-time']}</span>
-                 </div>
-                 <div>
-                     {item['retweet-post']}
-                 </div>
-         </div>
-     )
+        return (
+            <div className="square border border-1 py-2 px-3 my-2"
+                 style={{borderRadius: 16}}>
+                <div>
+                    <img className={"rounded-circle"} width={24} src={`/images/${item['retweet-avatar']}`}/>
+                    <span className={"fw-bolder ms-1"}>{item['retweet-author']}</span>
+                    <i className="bi bi-check-circle-fill wd-tuit-color mx-1"></i>
+                    <span className={"text-secondary"}>{item['retweet-id']} · {item['retweet-time']}</span>
+                </div>
+                <div>
+                    {item['retweet-post']}
+                </div>
+            </div>
+        )
     }
 }
 
@@ -91,12 +92,12 @@ const TuitItem = (
     }
 ) => {
     return (
-        <div className="list-group-item">
+        <div className="list-group-item pt-2 border-light">
             {/* top - retweet */}
             {item["retweet-person"] === ''?
                 '':
                 <div className="text-secondary fw-bolder ms-4">
-                    <i className="bi bi-repeat me-1"></i>
+                    <i className="bi bi-repeat me-2"></i>
                     {item["retweet-person"]} Retweeted
                 </div>}
             <div className="d-flex">
@@ -106,18 +107,23 @@ const TuitItem = (
                 </div>
 
                 {/* right - main contain */}
-                <div class={"ms-2"}>
+                <div className={"ms-2"}>
                     <div>
                         <span className={"fw-bolder"}>{item.author}</span>
-                        <i className="bi bi-check-circle-fill text-primary mx-1"></i>
+                        <i className="bi bi-check-circle-fill mx-1 wd-tuit-color"></i>
                         <span className={"text-secondary"}>
                             {item.id} · {item.time}
                         </span>
                         <i className="bi bi-three-dots float-end"></i>
                     </div>
-                    <Linkify>
+                    <div>
                         {item.post}
-                    </Linkify>
+                        {/* Show Anchor to the post link if needed. */}
+                        {item["post-link"] === "" ? "" : <a
+                            href={item["post-link"]}
+                            style={{textDecoration: 'None'}}
+                            className={"wd-tuit-color"}>{item["post-link"]}</a>}
+                    </div>
 
                     {/* bottom - photo or retweet*/}
                     <div>
@@ -126,20 +132,20 @@ const TuitItem = (
                     </div>
 
                     {/* likes, retweets, comments */}
-                    <div className="d-flex justify-content-between mt-2">
-                        <div className="d-flex">
-                            <i className="bi bi-chat me-1"></i>
+                    <div className="d-flex justify-content-between my-3">
+                        <div className="d-flex text-secondary">
+                            <i className="bi bi-chat me-3"></i>
                             {item.comments}
                         </div>
-                        <div className="d-flex">
-                            <i className="bi bi-repeat me-1"></i>
+                        <div className="d-flex text-secondary">
+                            <i className="bi bi-repeat me-3"></i>
                             {item.retweets}
                         </div>
-                        <div className="d-flex">
-                            <i className="bi bi-heart me-1"></i>
+                        <div className="d-flex text-secondary">
+                            <i className="bi bi-heart me-3"></i>
                             {item.likes}
                         </div>
-                        <div className="d-flex">
+                        <div className="d-flex text-secondary">
                             <i className="bi bi-upload"></i>
                         </div>
                         <div>
@@ -148,8 +154,8 @@ const TuitItem = (
                     {/* top - retweet */}
                     {item["retweet-person"] === ''?
                         '':
-                        <div className={"mt-2"}>
-                            <a href={"#"} style={{textDecoration: 'None'}}>Show this thread</a>
+                        <div className={"mb-2 mt-4"}>
+                            <a href={"#"} className={"wd-tuit-color"} style={{textDecoration: 'None'}}>Show this thread</a>
                         </div>}
                 </div>
             </div>
