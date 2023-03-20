@@ -1,5 +1,5 @@
 import React from "react";
-import TuitList from "../tuit-list";
+import TuitList from "../tuits";
 import "./index.css";
 
 const HomeComponent = () => {
