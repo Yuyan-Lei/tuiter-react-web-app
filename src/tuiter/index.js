@@ -6,13 +6,16 @@ import NavigationSidebar from "./navigation-sidebar";
 import WhoToFollowList from "./who-to-follow-list";
 import HomeComponent from "./home";
 import PostSummaryList from "./post-summary-list";
+import ProfileComponent from "./profile";
 
 import { configureStore } from '@reduxjs/toolkit';
 import {Provider} from "react-redux";
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
+import profileReducer from "./profile/profile-reducer";
+
 const store = configureStore({
-    reducer: {who: whoReducer, tuits: tuitsReducer}
+    reducer: {who: whoReducer, tuits: tuitsReducer, profile: profileReducer}
 });
 
 
@@ -28,14 +31,12 @@ function Tuiter() {
                     <Routes>
                         <Route path="home"    element={<HomeComponent/>}/>
                         <Route path="explore" element={<ExploreComponent/>}/>
-                        <Route path="*" element={<Navigate to="explore" replace />} />
+                        <Route path="profile" element={<ProfileComponent/>}/>
+                        <Route path="*" element={<Navigate to="home" replace />} />
                     </Routes>
                 </div>
                 <div className="d-sm-none d-md-none d-lg-block col-lg-4 col-xl-4">
-                    <Routes>
-                        <Route path="explore" element={<WhoToFollowList/>}/>
-                        <Route path="home" element={<PostSummaryList/>}/>
-                    </Routes>
+                    <WhoToFollowList/>
                 </div>
             </div>
         </Provider>
