@@ -25,14 +25,13 @@ const profileSlice = createSlice({
 
     reducers: {
         updateProfile: (state, action) => {
+            state.firstName = action.payload.name.split(' ')[0];
+            state.lastName = action.payload.name.split(' ')[1];
+            state.bio = action.payload.bio;
+            state.location = action.payload.location;
+            state.website = action.payload.website;
             console.log(state);
-            return {
-                ...state,
-                bio: action.payload.bio,
-                location: action.payload.location,
-                website: action.payload.website,
-            };
-        }
+        },
     }
 });
 

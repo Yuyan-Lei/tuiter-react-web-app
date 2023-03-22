@@ -3,6 +3,19 @@ import React from "react";
 
 const ProfilePage = () => {
     const profile = useSelector(state => state.profile);
+
+    const formatDateOfBirth = (dateString) => {
+        const date = new Date(dateString);
+        const options = { month: 'long', day: 'numeric', year: 'numeric' };
+        return date.toLocaleDateString('en-US', options).replace(',', '');
+    }
+
+    const formatDateJoined = (dateString) => {
+        const [month, year] = dateString.split('/');
+        const date = new Date(year, month - 1);
+        return new Intl.DateTimeFormat('en-US', { month: 'long', year: 'numeric' }).format(date);
+    };
+
     return (
         <div>
             {/*top bar*/}
@@ -59,9 +72,9 @@ const ProfilePage = () => {
                 <i className="bi bi-geo-alt me-1"></i>
                 <span>{profile.location} </span>
                 <i className="bi bi-lightbulb ms-2 me-1"></i>
-                <span>Born {profile.dateOfBirth} </span>
+                <span>Born {formatDateOfBirth(profile.dateOfBirth)} </span>
                 <i className="bi bi-calendar3 ms-2 me-1"></i>
-                <span>Joined {profile.dateJoined}</span>
+                <span>Joined {formatDateJoined(profile.dateJoined)}</span>
             </div>
 
             {/*following, followers*/}

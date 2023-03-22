@@ -53,7 +53,6 @@ const EditProfile = () => {
 
     const dispatch = useDispatch();
     const toggleProfileSave = (newProfile) => {
-        console.log(newProfile);
         dispatch(updateProfile(newProfile));
     }
 
