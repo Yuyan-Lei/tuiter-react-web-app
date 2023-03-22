@@ -1,24 +1,78 @@
-import {useSelector} from "react-redux";
+import {useDispatch, useSelector} from "react-redux";
 import React, {useState} from "react";
+import {updateProfile} from "./profile-reducer"
 
 const EditProfile = () => {
     const [editBirthDate, setEditBirthDate] = useState(false);
 
     const profile = useSelector(state => state.profile);
 
+    const [newProfile, setNewProfile] = useState({
+        name: profile.firstName + " " + profile.lastName,
+        location: profile.location,
+        bio: profile.bio,
+        website: profile.website,
+        dateOfBirth: profile.dateOfBirth,
+    });
+
+    const nameChangeHandler = (event) => {
+        const nameValue = event.target.value;
+        const temp = {
+            ...newProfile,
+            name: nameValue
+        };
+        setNewProfile(temp);
+    }
+
+    const bioChangeHandler = (event) => {
+        const bioValue = event.target.value;
+        const temp = {
+            ...newProfile,
+            bio: bioValue
+        };
+        setNewProfile(temp);
+    }
+
+    const locationChangeHandler = (event) => {
+        const locationValue = event.target.value;
+        const temp = {
+            ...newProfile,
+            location: locationValue
+        };
+        setNewProfile(temp);
+    }
+
+    const websiteChangeHandler = (event) => {
+        const websiteValue = event.target.value;
+        const temp = {
+            ...newProfile,
+            website: websiteValue
+        };
+        setNewProfile(temp);
+    }
+
+    const dispatch = useDispatch();
+    const toggleProfileSave = (newProfile) => {
+        console.log(newProfile);
+        dispatch(updateProfile(newProfile));
+    }
+
     return (
         <div>
             {/*top bar*/}
             <div className="row">
-                <div className="col-2 float-start">
-                    <i className="bi bi-cancel"></i>
+                <div className="col-1 float-start">
+                    <a href="/tuiter/profile" style={{color:'grey'}}>
+                        <i className="bi bi-x-lg"></i>
+                    </a>
                 </div>
-                <div className="col-6 float-start">
+                <div className="col-9 float-start">
                     Edit Profile
                 </div>
                 <div className="col-2 float-end">
                     <button type="button"
-                            className="btn btn-dark">
+                            className="btn btn-dark"
+                            onClick={()=>toggleProfileSave(newProfile)}>
                         Save
                     </button>
                 </div>
@@ -32,7 +86,7 @@ const EditProfile = () => {
             </div>
 
             {/*profile picture*/}
-            <div className="row">
+            <div>
                 <img src={profile.profilePicture}
                      width="100px" height="100px"
                      style={{position: 'relative', top: "-50%"}}
@@ -40,40 +94,60 @@ const EditProfile = () => {
             </div>
 
             {/*name*/}
-            <div>
-                <span style={{fontWeight:"bold", fontSize:22}}>{profile.firstName} {profile.lastName}</span>
-                <p style={{color: 'gray'}}>{profile.handle}</p>
+            <div className="mb-4">
+                <span  style={{color: 'gray'}}>Name</span>
+                <input className="form-control"
+                       placeholder="Name"
+                       value={newProfile.name}
+                       onChange={nameChangeHandler}
+                />
             </div>
 
             {/*bio*/}
-            <div className="mb-2">
-                {profile.bio}
+            <div className="mb-4">
+                <span  style={{color: 'gray'}}>Bio</span>
+                <textarea className="form-control"
+                       placeholder="Bio"
+                       value={newProfile.bio}
+                      onChange={bioChangeHandler}
+                />
             </div>
 
             {/*location*/}
-            <div className="mb-2" style={{color: 'gray'}}>
-                <span>{profile.location} </span>
+            <div className="mb-4">
+                <span  style={{color: 'gray'}}>Location</span>
+                <input className="form-control"
+                       placeholder="Location"
+                       value={newProfile.location}
+                       onChange={locationChangeHandler}
+
+                />
             </div>
 
             {/*Website*/}
             <div className="mb-3">
                 <input type="website" className="form-control"
-                       placeholder="Website"/>
+                       placeholder="Website"
+                        value={newProfile.website}
+                        onChange={websiteChangeHandler}/>
             </div>
 
             {/*Birthday*/}
-            <div>
+            <div className="mb-4">
                 <span style={{color: 'gray', fontSize: '14px'}}>Birth date · </span>
                 <button type="button" className={"btn btn-outline-primary"}
-                onClick={()=>setEditBirthDate(true)}>
-                    Edit
+                onClick={()=>setEditBirthDate(!editBirthDate)}>
+                    {!editBirthDate && "Edit"}
+                    {editBirthDate && "Done"}
                 </button>
-                {editBirthDate &&
-                    <input type="date" className="form-control"/>
-                }
-                {!editBirthDate &&
-                    <span>{profile.dateOfBirth}</span>
-                }
+                <div>
+                    {editBirthDate &&
+                        <input type="date" className="form-control" value={newProfile.dateOfBirth}/>
+                    }
+                    {!editBirthDate &&
+                        <span>{newProfile.dateOfBirth}</span>
+                    }
+                </div>
             </div>
 
             <div>

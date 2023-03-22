@@ -34,7 +34,7 @@ const ProfilePage = () => {
                     className={"ms-4 rounded"}/>
                 </div>
                 <div className="col-4 mt-2">
-                    <a href="#"
+                    <a href="/tuiter/editProfile"
                        className="btn btn-outline-dark ms-5"
                        style={{borderRadius: "18px", borderColor:"lightgrey", fontWeight:"bold"}}
                        role="button">

@@ -13,6 +13,7 @@ import {Provider} from "react-redux";
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./tuits/tuits-reducer";
 import profileReducer from "./profile/profile-reducer";
+import EditProfile from "./profile/edit-profile";
 
 const store = configureStore({
     reducer: {who: whoReducer, tuits: tuitsReducer, profile: profileReducer}
@@ -32,6 +33,7 @@ function Tuiter() {
                         <Route path="home"    element={<HomeComponent/>}/>
                         <Route path="explore" element={<ExploreComponent/>}/>
                         <Route path="profile" element={<ProfileComponent/>}/>
+                        <Route path="editProfile" element={<EditProfile/>}/>
                         <Route path="*" element={<Navigate to="home" replace />} />
                     </Routes>
                 </div>
