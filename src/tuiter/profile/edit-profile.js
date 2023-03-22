@@ -1,6 +1,7 @@
 import {useDispatch, useSelector} from "react-redux";
 import React, {useState} from "react";
 import {updateProfile} from "./profile-reducer"
+import {Link} from "react-router-dom";
 
 const EditProfile = () => {
     const [editBirthDate, setEditBirthDate] = useState(false);
@@ -61,25 +62,27 @@ const EditProfile = () => {
             {/*top bar*/}
             <div className="row">
                 <div className="col-1 float-start">
-                    <a href="/tuiter/profile" style={{color:'grey'}}>
+                    <Link to="/tuiter/profile" style={{color:'grey'}}>
                         <i className="bi bi-x-lg"></i>
-                    </a>
+                    </Link>
                 </div>
                 <div className="col-9 float-start">
                     Edit Profile
                 </div>
                 <div className="col-2 float-end">
-                    <button type="button"
-                            className="btn btn-dark"
-                            onClick={()=>toggleProfileSave(newProfile)}>
+                    <Link to="/tuiter/profile"
+                          className="btn btn-dark"
+                          style={{borderRadius: "18px", borderColor:"lightgrey"}}
+                          role="button"
+                          onClick={()=>toggleProfileSave(newProfile)}>
                         Save
-                    </button>
+                    </Link>
                 </div>
             </div>
 
             {/*banner*/}
             <div>
-                <img src={profile.bannerPicture}
+                <img src={`/images/${profile.bannerPicture}`}
                      width="100%"
                      height="200px"/>
             </div>

@@ -1,5 +1,6 @@
 import {useSelector} from "react-redux";
 import React from "react";
+import {Link} from "react-router-dom";
 
 const ProfilePage = () => {
     const profile = useSelector(state => state.profile);
@@ -47,12 +48,12 @@ const ProfilePage = () => {
                     className={"ms-4 rounded-circle"}/>
                 </div>
                 <div className="col-4 mt-2">
-                    <a href="/tuiter/editProfile"
-                       className="btn btn-outline-dark ms-5"
-                       style={{borderRadius: "18px", borderColor:"lightgrey", fontWeight:"bold"}}
-                       role="button">
+                    <Link to="/tuiter/editProfile"
+                          className="btn btn-outline-dark ms-5"
+                          style={{borderRadius: "18px", borderColor:"lightgrey", fontWeight:"bold"}}
+                          role="button">
                         Edit Profile
-                    </a>
+                    </Link>
                 </div>
             </div>
 
