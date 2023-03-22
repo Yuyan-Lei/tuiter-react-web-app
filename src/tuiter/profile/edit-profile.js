@@ -86,10 +86,10 @@ const EditProfile = () => {
 
             {/*profile picture*/}
             <div>
-                <img src={profile.profilePicture}
+                <img src={`/images/${profile.profilePicture}`}
                      width="100px" height="100px"
                      style={{position: 'relative', top: "-50%"}}
-                     className={"ms-4 rounded"}/>
+                     className={"ms-4 rounded-circle"}/>
             </div>
 
             {/*name*/}

@@ -5,7 +5,7 @@ const initialProfile = {
     lastName: 'Annunziato',
     handle: '@jannunzi',
 
-    profilePicture: '../../../public/images/profileImage.jpg',
+    profilePicture: 'profileImage.jpg',
     bannerPicture: 'polyglot.png',
 
     bio: 'Faculty, Software Engineer, AI, Space, and renewable enthusiast. Retuits and likes are not endorsements.',

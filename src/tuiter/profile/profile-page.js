@@ -33,7 +33,7 @@ const ProfilePage = () => {
 
             {/*banner*/}
             <div>
-                <img src={profile.bannerPicture}
+                <img src={`/images/${profile.bannerPicture}`}
                      width="100%"
                      height="200px"/>
             </div>
@@ -41,10 +41,10 @@ const ProfilePage = () => {
             {/*profile picture*/}
             <div className="row">
                 <div className="col-8">
-                    <img src={profile.profilePicture}
+                    <img src={`/images/${profile.profilePicture}`}
                             width="100px" height="100px"
                          style={{position: 'relative', top: "-50%"}}
-                    className={"ms-4 rounded"}/>
+                    className={"ms-4 rounded-circle"}/>
                 </div>
                 <div className="col-4 mt-2">
                     <a href="/tuiter/editProfile"
