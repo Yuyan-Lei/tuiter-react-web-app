@@ -77,17 +77,17 @@ const EditProfile = () => {
             {/*top bar*/}
             <div className="row align-items-center p-2">
                 <div className="col-1 float-start">
-                    <Link to="/tuiter/profile" style={{color:'grey'}}>
+                    <Link to="/tuiter/profile" style={{color:'black'}}>
                         <i className="bi bi-x-lg"></i>
                     </Link>
                 </div>
-                <div className="col-9 float-start" style={{ fontWeight: "bold"}}>
-                    Edit Profile
+                <div className="col-9 float-start" style={{ fontWeight: "bold", fontSize: 18}}>
+                    Edit profile
                 </div>
                 <div className="col-2 float-end">
                     <Link to="/tuiter/profile"
                           className="btn btn-dark"
-                          style={{borderRadius: "18px", fontSize: 14, fontWeight: "bold", paddingTop: "3px", paddingBottom: "3px"}}
+                          style={{borderRadius: "18px", fontSize: 15, fontWeight: "bold", paddingTop: "3.5px", paddingBottom: "3.5px"}}
                           role="button"
                           onClick={()=>toggleProfileSave(newProfile)}>
                         Save
@@ -106,7 +106,7 @@ const EditProfile = () => {
             <div className="d-flex">
                 <div>
                     <img src={`/images/${profile.profilePicture}`}
-                     width="100px" height="100px"
+                     width="120px" height="120px"
                      style={{position: 'relative', top: "-50%"}}
                      className={"ms-4 rounded-circle"}/>
                 </div>
@@ -120,7 +120,7 @@ const EditProfile = () => {
                        value={newProfile.name}
                        onChange={nameChangeHandler}
                 />
-                <label for="nameInput">Name</label>
+                <label for="nameInput" style={{color:"#6c757d"}}>Name</label>
             </div>
 
             {/*bio*/}
@@ -132,7 +132,7 @@ const EditProfile = () => {
                        value={newProfile.bio}
                       onChange={bioChangeHandler}
                 />
-                <label for="bioInput">Bio</label>
+                <label for="bioInput" style={{color:"#6c757d"}}>Bio</label>
             </div>
 
             {/*location*/}
@@ -144,7 +144,7 @@ const EditProfile = () => {
                        onChange={locationChangeHandler}
 
                 />
-                <label for="locationInput">Location</label>
+                <label for="locationInput" style={{color:"#6c757d"}}>Location</label>
             </div>
 
             {/*Website*/}
@@ -154,7 +154,7 @@ const EditProfile = () => {
                        placeholder="Website"
                         value={newProfile.website}
                         onChange={websiteChangeHandler}/>
-                <label for="websiteInput">Website</label>
+                <label for="websiteInput" style={{color:"#6c757d"}}>Website</label>
             </div>
 
             {/*Birthday*/}

@@ -8,7 +8,7 @@ const ProfilePage = () => {
     const formatDateOfBirth = (dateString) => {
         const date = new Date(dateString);
         const options = { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' };
-        return date.toLocaleDateString('en-US', options).replace(',', '');
+        return date.toLocaleDateString('en-US', options);
     }
 
     const formatDateJoined = (dateString) => {
@@ -43,7 +43,7 @@ const ProfilePage = () => {
             <div className="row">
                 <div className="col-8">
                     <img src={`/images/${profile.profilePicture}`}
-                            width="100px" height="100px"
+                            width="120px" height="120px"
                          style={{position: 'relative', top: "-50%"}}
                     className={"ms-4 rounded-circle"}/>
                 </div>
