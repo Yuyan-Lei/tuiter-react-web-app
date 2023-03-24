@@ -7,7 +7,7 @@ const ProfilePage = () => {
 
     const formatDateOfBirth = (dateString) => {
         const date = new Date(dateString);
-        const options = { month: 'long', day: 'numeric', year: 'numeric' };
+        const options = { timeZone: 'UTC', month: 'long', day: 'numeric', year: 'numeric' };
         return date.toLocaleDateString('en-US', options).replace(',', '');
     }
 
@@ -18,16 +18,16 @@ const ProfilePage = () => {
     };
 
     return (
-        <div>
+        <div className="border">
             {/*top bar*/}
-            <div className="row">
-                <div className="col-2 float-start">
+            <div className="d-flex px-4 py-1">
+                <div className="col-2 d-flex align-items-center">
                     <i className="bi bi-arrow-left"></i>
                 </div>
-                <div className="col-8 float-start">
-                    <div className="col">
-                    <div>{profile.firstName} {profile.lastName}</div>
-                    <div>6,114 Tweets</div>
+                <div className="col-8">
+                    <div className="d-flex flex-column">
+                        <div style={{fontWeight:"bold", fontSize:18}}>{profile.firstName} {profile.lastName}</div>
+                        <div style={{color: 'gray', fontSize:12}}>6,114 Tweets</div>
                     </div>
                 </div>
             </div>
@@ -58,18 +58,18 @@ const ProfilePage = () => {
             </div>
 
             {/*name*/}
-            <div>
+            <div className="px-4">
                 <span style={{fontWeight:"bold", fontSize:22}}>{profile.firstName} {profile.lastName}</span>
                 <p style={{color: 'gray'}}>{profile.handle}</p>
             </div>
 
             {/*bio*/}
-            <div className="mb-2">
+            <div className="mb-2 px-4">
                 {profile.bio}
             </div>
 
             {/*location, birthday, dateJoined*/}
-            <div className="mb-2" style={{color: 'gray'}}>
+            <div className="mb-2 px-4" style={{color: 'gray'}}>
                 <i className="bi bi-geo-alt me-1"></i>
                 <span>{profile.location} </span>
                 <i className="bi bi-lightbulb ms-2 me-1"></i>
@@ -79,7 +79,7 @@ const ProfilePage = () => {
             </div>
 
             {/*following, followers*/}
-            <div>
+            <div className="px-4 pb-4">
                 <span>
                     <span style={{fontWeight:"bold"}}>{profile.followingCount}</span>
                     <span className="ms-1 me-4" style={{color: 'grey'}}>Following</span>

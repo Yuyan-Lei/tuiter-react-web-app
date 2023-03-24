@@ -12,7 +12,7 @@ const initialProfile = {
     website: 'youtube.com/webdevtv',
 
     location: 'San Jose, CA',
-    dateOfBirth: '12/21/1997',
+    dateOfBirth: '1997-12-21',
     dateJoined: '1/2022',
 
     followingCount: 340,
@@ -30,6 +30,7 @@ const profileSlice = createSlice({
             state.bio = action.payload.bio;
             state.location = action.payload.location;
             state.website = action.payload.website;
+            state.dateOfBirth = action.payload.dateOfBirth;
             console.log(state);
         },
     }

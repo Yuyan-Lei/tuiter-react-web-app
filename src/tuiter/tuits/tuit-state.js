@@ -1,4 +1,6 @@
 import React from "react";
+import {useDispatch} from "react-redux";
+import {likeTuit} from "./tuits-reducer";
 
 const TuitState = (
     {
@@ -18,6 +20,12 @@ const TuitState = (
         }
     }
 ) => {
+    
+    const dispatch = useDispatch();
+    
+    const likeTuitHandler = (id) => {
+        dispatch(likeTuit(id));
+    }
     return (
         <div className="d-flex justify-content-between mt-2">
             <div className="d-flex">
@@ -30,8 +38,9 @@ const TuitState = (
             </div>
             <div className="d-flex">
                 {item.liked?
-                    <i className="bi bi-heart-fill me-1" style={{color: "tomato"}}></i> :
-                    <i className="bi bi-heart me-1"></i>}
+                    <i className="bi bi-heart-fill me-1" style={{color: "tomato"}}
+                        onClick={() => likeTuitHandler(item._id)}></i> :
+                    <i className="bi bi-heart me-1" onClick={() => likeTuitHandler(item._id)}></i>}
                 {item.likes}
             </div>
             <div className="d-flex">
