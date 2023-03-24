@@ -4,7 +4,7 @@ import {useDispatch, useSelector} from "react-redux";
 import {findTuitsThunk} from "../../services/tuits-thunks";
 
 const TuitsList = () => {
-    const {TuitsArray, loading} = useSelector(state => state.tuitsData);
+    const {tuits, loading} = useSelector(state => state.tuitsData);
     const dispatch = useDispatch();
     useEffect(() => {
         dispatch(findTuitsThunk())
@@ -20,7 +20,7 @@ const TuitsList = () => {
             }
 
             {
-                TuitsArray.map(item =>
+                tuits.map(item =>
                     <TuitsItem
                         key={item._id}
                         item={item}
