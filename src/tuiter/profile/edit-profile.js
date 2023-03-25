@@ -87,7 +87,13 @@ const EditProfile = () => {
                 <div className="col-2 float-end">
                     <Link to="/tuiter/profile"
                           className="btn btn-dark"
-                          style={{borderRadius: "18px", fontSize: 15, fontWeight: "bold", paddingTop: "3.5px", paddingBottom: "3.5px"}}
+                          style={{borderRadius: "18px",
+                              fontSize: 15,
+                              fontWeight: "bold",
+                              height: "30px",
+                              display: "flex",
+                              alignItems: "center",
+                              justifyContent: "center",}}
                           role="button"
                           onClick={()=>toggleProfileSave(newProfile)}>
                         Save
@@ -99,7 +105,34 @@ const EditProfile = () => {
             <div>
                 <img src={`/images/${profile.bannerPicture}`}
                      width="100%"
-                     height="200px"/>
+                     height="200px"
+                     style={{filter: 'brightness(0.7)'}}/>
+                <div className={"rounded-circle"}
+                     style={{position: "absolute",
+                         left: "230px",
+                         top: "130px",
+                         display: "flex",
+                         alignItems: "center",
+                         justifyContent: "center",
+                         width: "30px",
+                         height: "30px",
+                         backgroundColor: "rgba(0, 0, 0, 0.5)",
+                     }}>
+                    <i className="bi bi-camera" style={{color: "white", marginLeft: "2px"}}></i>
+                </div>
+                <div className={"rounded-circle"}
+                     style={{position: "absolute",
+                         left: "280px",
+                         top: "130px",
+                         display: "flex",
+                         alignItems: "center",
+                         justifyContent: "center",
+                         width: "30px",
+                         height: "30px",
+                         backgroundColor: "rgba(0, 0, 0, 0.5)",
+                     }}>
+                    <i className="bi bi-x" style={{color: "white", marginLeft: "2px", fontSize: "24px"}}></i>
+                </div>
             </div>
 
             {/*profile picture*/}
@@ -107,8 +140,21 @@ const EditProfile = () => {
                 <div>
                     <img src={`/images/${profile.profilePicture}`}
                      width="120px" height="120px"
-                     style={{position: 'relative', top: "-50%"}}
+                     style={{position: 'relative', top: "-50%", filter: "brightness(0.7)"}}
                      className={"ms-4 rounded-circle"}/>
+                    <div className={"rounded-circle"}
+                        style={{position: "absolute",
+                        left: "85px",
+                        top: "230px",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        width: "30px",
+                        height: "30px",
+                        backgroundColor: "rgba(0, 0, 0, 0.5)",
+                    }}>
+                        <i className="bi bi-camera" style={{color: "white", marginLeft: "2px"}}></i>
+                    </div>
                 </div>
             </div>
 

@@ -21,7 +21,7 @@ const ProfilePage = () => {
         <div className="border">
             {/*top bar*/}
             <div className="d-flex px-4 py-1">
-                <div className="col-2 d-flex align-items-center">
+                <div className="col-1 d-flex align-items-center">
                     <i className="bi bi-arrow-left"></i>
                 </div>
                 <div className="col-8">
@@ -40,16 +40,17 @@ const ProfilePage = () => {
             </div>
 
             {/*profile picture*/}
-            <div className="row">
-                <div className="col-8">
+            <div className="d-flex" style={{height: "100px"}}>
+                <div>
                     <img src={`/images/${profile.profilePicture}`}
-                            width="120px" height="120px"
-                         style={{position: 'relative', top: "-50%"}}
+                            width="140px" height="140px"
+                         style={{border: '3px solid white', marginTop: "-70px", marginLeft: "20px"}}
                     className={"ms-4 rounded-circle"}/>
                 </div>
-                <div className="col-4 mt-2">
+                <div className="mt-2"
+                    style={{marginLeft: "auto", marginRight: "10px"}}>
                     <Link to="/tuiter/editProfile"
-                          className="btn btn-outline-dark ms-5"
+                          className="btn btn-outline-dark"
                           style={{borderRadius: "18px", borderColor:"lightgrey", fontWeight:"bold"}}
                           role="button">
                         Edit Profile

@@ -24,7 +24,7 @@ const store = configureStore({
 function Tuiter() {
     return (
         <Provider store={store}>
-            <div className="row mt-2">
+            <div className="row mt-2" style={{fontSize: "14px"}}>
                 <div className="col-2 col-md-2 col-lg-1 col-xl-2">
                     <NavigationSidebar/>
                 </div>

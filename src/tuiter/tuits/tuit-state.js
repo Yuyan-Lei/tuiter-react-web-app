@@ -36,10 +36,9 @@ const TuitState = (
                 <i className="bi bi-repeat me-1"></i>
                 {item.retuits}
             </div>
-            <div className="d-flex">
+            <div className="d-flex" onClick={() => likeTuitHandler(item._id)}>
                 {item.liked?
-                    <i className="bi bi-heart-fill me-1" style={{color: "tomato"}}
-                        onClick={() => likeTuitHandler(item._id)}></i> :
+                    <i className="bi bi-heart-fill me-1" style={{color: "tomato"}}></i> :
                     <i className="bi bi-heart me-1" onClick={() => likeTuitHandler(item._id)}></i>}
                 {item.likes}
             </div>
