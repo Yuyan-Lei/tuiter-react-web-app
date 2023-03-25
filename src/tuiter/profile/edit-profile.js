@@ -138,10 +138,14 @@ const EditProfile = () => {
             {/*profile picture*/}
             <div className="d-flex">
                 <div>
-                    <img src={`/images/${profile.profilePicture}`}
-                     width="120px" height="120px"
-                     style={{position: 'relative', top: "-50%", filter: "brightness(0.7)"}}
-                     className={"ms-4 rounded-circle"}/>
+                    <div style={{position: 'relative', top: "-50%", border: '3px solid white',
+                            width:"fit-content", height:"fit-content"}}
+                              className={"ms-4 rounded-circle"}>
+                        <img src={`/images/${profile.profilePicture}`}
+                         width="120px" height="120px"
+                         style={{filter: "brightness(0.7)"}}
+                         className={"rounded-circle"}/>
+                    </div>
                     <div className={"rounded-circle"}
                         style={{position: "absolute",
                         left: "85px",

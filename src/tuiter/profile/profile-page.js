@@ -40,7 +40,7 @@ const ProfilePage = () => {
             </div>
 
             {/*profile picture*/}
-            <div className="d-flex" style={{height: "100px"}}>
+            <div className="d-flex" style={{height: "80px"}}>
                 <div>
                     <img src={`/images/${profile.profilePicture}`}
                             width="140px" height="140px"

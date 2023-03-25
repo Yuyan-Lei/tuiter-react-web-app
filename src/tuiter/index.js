@@ -35,7 +35,7 @@ function Tuiter() {
                         <Route path="explore" element={<ExploreComponent/>}/>
                         <Route path="profile" element={<ProfileComponent/>}/>
                         <Route path="editProfile" element={<EditProfile/>}/>
-                        <Route path="*" element={<ExploreComponent/>} />
+                        <Route path="*" element={<HomeComponent/>} />
                     </Routes>
                 </div>
                 <div className="d-none d-lg-block col-lg-4 col-xl-4">
