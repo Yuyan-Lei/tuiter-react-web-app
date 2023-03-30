@@ -1,0 +1,66 @@
+.wd-color-white {
+    color: white;
+}
+
+.wd-color-blue {
+    color: rgb(26, 140, 216)
+
+}
+
+.wd-color-grey {
+    color: rgb(83, 100, 113);
+}
+
+.wd-color-lightblack {
+    color:rgb(15, 20, 25);
+}
+
+.wd-color-red {
+    color: red;
+}
+
+.wd-color-black {
+    color: black;
+}
+
+.wd-color-border {
+    color: rgb(83, 100, 113);
+}
+
+.wd-background-color-darkgrey {
+    background-color: rgb(33, 35, 39);
+}
+
+.wd-bg-color-blue {
+    background-color:rgb(26, 140, 216);
+}
+
+.wd-margin-left-default {
+    margin-left: 16px;
+}
+
+.wd-padding-all-around {
+    padding: 16px;
+}
+
+.wd-float-left {
+    float: left;
+}
+
+.wd-float-right {
+    float: right;
+}
+
+.wd-float-done {
+    clear: both;
+}
+
+.wd-more-button {
+    width: 16px;
+    height: 8px;
+    object-fit: cover;
+}
+
+.wd-button-round-border {
+    border-radius: 9999px;
+}
