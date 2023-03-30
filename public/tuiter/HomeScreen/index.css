@@ -1,0 +1,193 @@
+/* --- Bookmark Page --- */
+body {
+    background-color: black;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+/* Overall continer */
+.wd-bm-overall-container {
+    border: 1px solid rgb(47, 51, 54);
+}
+
+/* For Section A */
+.wd-bm-A-container {
+    border-bottom: 1px solid rgb(47, 51, 54);
+    padding: 12px 16px;
+}
+.wd-bm-A-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: system-ui;
+}
+.wd-bm-A-handle {
+    color: rgb(110, 118, 125);
+    font-size: 13px;
+    font-family: system-ui;
+    margin-top: 4px;
+}
+
+/* For Section B */
+.wd-bm-BtoG-border-bottom {
+    border-bottom: 1px solid rgb(47, 51, 54);
+}
+.wd-bm-BtoG-container {
+    padding: 12px 16px 16px;
+    display: flex;
+}
+.wd-bm-B-container {
+    margin-right: 12px;
+}
+.wd-bm-B-avatar-photo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* For Section C */
+.wd-bm-CtoF-container {
+    padding-left: 16px;
+}
+.wd-bm-C-author {
+    color: white;
+    font-size: 15px;
+    font-family: system-ui;
+    font-weight: bold;
+}
+.wd-bm-C-handle {
+    color: rgb(110, 118, 125) ;
+    font-size: 15px;
+    font-family: system-ui;
+}
+
+/* For Section D */
+.wd-bm-D-container {
+    color: white;
+    font-size: 15px;
+    font-family: system-ui;
+    max-width: 506px;
+}
+
+/* For Section E */
+.wd-bm-EtoF-container {
+    border: 1px solid rgb(47, 51, 54);
+    border-radius: 20px;
+    margin-top: 12px;
+    overflow: hidden;
+}
+.wd-bm-E-photo {
+    height: 264px;
+    width: 504px;
+    object-fit: cover;
+}
+
+/* For Section F */
+.wd-bm-F-container {
+    padding: 12px;
+    border-top: 1px solid rgb(47, 51, 54);
+}
+.wd-bm-F-title {
+    color: white;
+    font-size: 15px;
+    font-family: system-ui;
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+.wd-bm-F-grey-text {
+    color: rgb(110, 118, 125);
+    font-size: 15px;
+    font-family: system-ui;
+}
+.wd-bm-F-link-icon {
+    height: 12px;
+    width: 12px;
+    object-fit: cover;
+}
+
+/* For Section G */
+.wd-bm-G-container {
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.wd-bm-G-box {
+}
+.wd-bm-G-hyperlink-container {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.wd-bm-G-icon {
+    height: 15px;
+    width: 15px;
+    object-fit: cover;
+}
+.wd-bm-G-text {
+    font-size: 15px;
+    font-family: system-ui;
+    margin-left: 12px;
+}
+
+.wd-follower-square-photo {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.wd-follower-verified-tag {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.wd-follow-name {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    white-space: nowrap;
+}
+
+.wd-follow-id {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.btn-primary.wd-follow-button-override {
+    font-size: 14px;
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+    min-height: 32px;
+    min-width: 32px;
+    align-items: stretch;
+    border-color: black;
+    border-radius: 9999px;
+}
+
+.nav-item.wd-nav-item-override {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.nav-item.wd-nav-item-override-select {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+}
+
+.wd-nav-bar-text {
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.wd-follow-button-row {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
