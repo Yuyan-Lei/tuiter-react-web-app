@@ -40,7 +40,7 @@ const TuitsItem = (
                 {/* right - main contain */}
                 <div className={"col-10"}>
                     <div>
-                        <span className={"fw-bolder"}>{item.userName}</span>
+                        <span className={"fw-bolder"}>{item.username}</span>
                         <i className="bi bi-check-circle-fill text-primary mx-1"></i>
                         <span className={"text-secondary"}>
                             {item.handle} · {item.time}

@@ -1,6 +1,6 @@
 import React from "react";
 import {useDispatch} from "react-redux";
-import {likeTuit} from "./tuits-reducer";
+import {updateTuitThunk} from "../../services/tuits-thunks";
 
 const TuitState = (
     {
@@ -23,8 +23,19 @@ const TuitState = (
     
     const dispatch = useDispatch();
     
-    const likeTuitHandler = (id) => {
-        dispatch(likeTuit(id));
+    const likeTuitHandler = (item) => {
+        dispatch(updateTuitThunk({
+            ...item,
+            liked: !item.liked,
+            likes: item.liked ? item.likes - 1 : item.likes + 1,
+        }))
+    }
+    const disLikeTuitHandler = (item) => {
+        dispatch(updateTuitThunk({
+            ...item,
+            disliked: !item.disliked,
+            dislikes: item.disliked ? item.dislikes - 1 : item.dislikes + 1,
+        }))
     }
     return (
         <div className="d-flex justify-content-between mt-2">
@@ -36,11 +47,17 @@ const TuitState = (
                 <i className="bi bi-repeat me-1"></i>
                 {item.retuits}
             </div>
-            <div className="d-flex" onClick={() => likeTuitHandler(item._id)}>
+            <div className="d-flex" onClick={() => likeTuitHandler(item)}>
                 {item.liked?
                     <i className="bi bi-heart-fill me-1" style={{color: "tomato"}}></i> :
-                    <i className="bi bi-heart me-1" onClick={() => likeTuitHandler(item._id)}></i>}
+                    <i className="bi bi-heart me-1"></i>}
                 {item.likes}
+            </div>
+            <div className="d-flex" onClick={() => disLikeTuitHandler(item)}>
+                {item.disliked?
+                    <i className="bi bi-hand-thumbs-down-fill me-1" style={{color: "black"}}></i> :
+                    <i className="bi bi-hand-thumbs-down me-1"></i>}
+                {item.dislikes}
             </div>
             <div className="d-flex">
                 <i className="bi bi-upload"></i>

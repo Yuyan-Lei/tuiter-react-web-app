@@ -12,11 +12,11 @@ const NavigationSidebar = () => {
             <a className="list-group-item">
                 <i className="bi bi-twitter"></i>
             </a>
-            <Link to="/tuiter/home" className={`list-group-item ${active === 'home'?'active':''}`}>
+            <Link to="/tuiter/home" className={`list-group-item ${active === 'home' || active === '' || active === undefined?'active':''}`}>
                 <i className="bi bi-house-door-fill me-2"></i>
                 <span className="wd-nav-bar-text d-none d-xl-inline">Home</span>
             </Link>
-            <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore' || active === '' || active === undefined?'active':''}`}>
+            <Link to="/tuiter/explore" className={`list-group-item ${active === 'explore'?'active':''}`}>
                 <i className="bi bi-hash me-2"></i>
                 <span className="wd-nav-bar-text d-none d-xl-inline">Explore</span>
             </Link>
